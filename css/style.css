@@ -1,11 +1,15 @@
-  @import url('https://fonts.googleapis.com/css?family=Rubik:500');
+
+  @import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 
 
 * {
   padding:0;
   margin:0;
 }
-
+body{
+    background-color :pink;
+    font-family: 'Permanent Marker', cursive;
+}
 /* video full screen+responsive */
 video {
   height: 100%;
@@ -20,7 +24,8 @@ video {
 d*/
 .button {
   padding: 50px 42px;
-  box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+      display: flex;
+  justify-content: center;
   line-height: 1.75;
   background:pink;
   text-decoration: none;
@@ -29,8 +34,12 @@ d*/
   letter-spacing: .08em;
   text-transform: uppercase;
   position: relative;
-  transition: background-color .6s ease;
-  overflow: hidden;}
+ 
+ 
+  overflow: hidden;
+  cursor: pointer;
+  }
+  
 
 
 
@@ -42,9 +51,39 @@ d*/
   align-items: center;
   padding: 15px;
   color: blue;
- 
+ width: 50%;
+ text-align: center;
+  box-shadow:         3px 3px 5px 6px gray;
   }
  
+.instruction{
+  background-color: pink;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: blue;
+   
+  }
+
+  .instru{
+
+       padding: 5px;
+
+  line-height: 1.75;
+  background:pink;
+  text-decoration: none;
+  background-color: white;
+  font-size: x-large;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+  position: relative;
+ 
+ 
+  overflow: hidden;
+  cursor: pointer;
+ box-shadow:         3px 3px 5px 6px gray;
+  }
 
 .text-center {
     background-color: pink;
@@ -78,3 +117,4 @@ d*/
  #social-em:hover {
      color: #f39c12;
  }
+
