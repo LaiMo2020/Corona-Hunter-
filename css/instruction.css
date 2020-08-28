@@ -1,80 +1,66 @@
-
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400, 700);
 
 body {
-    background-color: pink;
+  background-color: pink;
 }
-
+/* styling the box */
 .idk {
-    margin-top: 20px;
-    margin-right:auto;
-    margin-left:auto;
-    width:500px;
-    height:auto;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 500px;
+  height: auto;
 }
-
-img {
-    border-top: 2px dotted #3268C7;
-    border-bottom: 2px dotted #D14545;
-    border-radius: 50%;
-    width:200px;
-    height:auto;
-    padding:7px;
-}
-
+/* the title font */
 h1 {
-    font-family: 'Permanent Marker', cursive;
-    text-align:center;
-    margin-top:1px;
-    color:#D14545;
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  margin-top: 1px;
+  color: #d14545;
 }
-
+/* the line to seprate text  */
 .hr {
-    width: 300px;
-    border:1px solid #3D3D3D;
+  width: 300px;
+  border: 1px solid #3d3d3d;
 }
-
+/* styling the font of p */
 p {
-    font-family: 'Amatic SC', cursive;
-    text-align:center;
-    font-size: 24px;
-    color:#FFFFFF;
+  font-family: "Amatic SC", cursive;
+  text-align: center;
+  font-size: 24px;
+  color: #ffffff;
 }
 
 .top {
-    font-family: 'Quicksand', sans-serif;
-    text-align:left;
-    margin-top:10px;
-    font-size: 24px;
-    color:#FFFFFF;
-    text-decoration:underline;
+  font-family: "Quicksand", sans-serif;
+  text-align: left;
+  margin-top: 10px;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .bottom {
-    font-family: 'Amatic SC', cursive;
-    font-size: 24px;
-    margin-top:-35px;
-    color:#D14545;
+  font-family: "Amatic SC", cursive;
+  font-size: 24px;
+  margin-top: -35px;
+  color: #d14545;
 }
 
 .bottom a {
-    font-family: 'Amatic SC', cursive;
-    font-size: 24px;
-    margin-top:-10px;
-    color:#FFF;
-    text-decoration: none;
+  font-family: "Amatic SC", cursive;
+  font-size: 40px;
+  margin-top: -10px;
+  color: #fff;
+  text-decoration: none;
+  box-shadow: 6px 6px 5px 6px white;
+  background-color: #d14545;
 }
 
 .bottom p {
-    font-family: 'Amatic SC', cursive;
-    font-size: 24px;
-    color:#FFF;
-    text-decoration: none;
-}
-
-.bottom a:hover {
-    font-family: 'Amatic SC', cursive;
-    font-size: 24px;
-    color:#D14545;
-    text-decoration:underline;
+  font-family: "Amatic SC", cursive;
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
 }
