@@ -60,7 +60,8 @@
 }
 body{
     background-color :pink;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Impact', cursive;
+    
 }
 /* video full screen+responsive */
 video {
@@ -102,7 +103,7 @@ d*/
   justify-content: center;
   align-items: center;
   padding: 15px;
-  color: blue;
+  color: #007bff;
  width: 50%;
  text-align: center;
   box-shadow:         3px 3px 5px 6px gray;
@@ -115,7 +116,7 @@ d*/
   justify-content: center;
   align-items: center;
   padding: 15px;
-  color: blue;
+  color: #007bff;
    
   }
 /* styling the instruction buttom */
