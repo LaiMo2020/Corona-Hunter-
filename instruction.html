@@ -18,55 +18,147 @@
     />
 
     <link rel="stylesheet" href="css/instruction.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
    
     <title>Instructions</title>
 </head>
+
+
 <body>
- 
-
-
-
-
-	
-<div class="idk">
-  
-    <h1>Instructions</h1>
-    <hr class="hr">
-    <p>You are presented with a board of squares. Some squares contain VIRUESES (bombs), others don't. If you click on a square containing a bomb, you lose. If you manage to click all the squares (without clicking on any bombs) you win.
-Clicking a square which doesn't have a VIRUS reveals the number of neighbouring squares containing viruses. Use this information plus some guess work to avoid the viruses.
-To open a square, point at the square and click on it. </p>
-    <hr class="hr"> <br>
-<center><div class="bottom"><p><a href="index.html">Home</a> </p></div></center>
+<div class="wrapper">
+  <div class="bottle">
+    <div class="bottle-top"></div>
+    <div class="bottle-neck"></div>
+    <div class="bottle-circle"></div>
+  </div>
+  <div class="bottle-liquid">
+    <div class="bottle-top"></div>
+    <div class="bottle-neck-top"></div>
+    <div class="bottle-neck"></div>
+    <div class="bottle-circle"></div>
+  </div>
+  <div class="bottle-shadows">
+    <div class="neck-shadow"></div>
+    <div class="left-shadow"></div>
+    <div class="bottom-shadow"></div>
+  </div>
+  <div class="bottle-virus" id="virus-1">
+    <div class="virus-body virus-purple">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="virus-tentacle"></div>
+    <div class="virus-tentacle tentacle-2"></div>
+    <div class="virus-tentacle tentacle-3"></div>
+    <div class="virus-tentacle tentacle-4"></div>
+    <div class="virus-tentacle tentacle-5"></div>
+    <div class="virus-tentacle tentacle-6"></div>
+    <div class="virus-tentacle tentacle-7"></div>
+    <div class="virus-tentacle tentacle-8"></div>
+    <div class="virus-tentacle tentacle-9"></div>
+  </div>
+  <div class="bottle-virus" id="virus-2">
+    <div class="virus-body virus-green">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="virus-tentacle"></div>
+    <div class="virus-tentacle tentacle-2"></div>
+    <div class="virus-tentacle tentacle-3"></div>
+    <div class="virus-tentacle tentacle-4"></div>
+    <div class="virus-tentacle tentacle-5"></div>
+    <div class="virus-tentacle tentacle-6"></div>
+    <div class="virus-tentacle tentacle-7"></div>
+    <div class="virus-tentacle tentacle-8"></div>
+    <div class="virus-tentacle tentacle-9"></div>
+  </div>
+  <div class="bottle-virus" id="virus-3">
+    <div class="virus-body virus-green">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="virus-tentacle"></div>
+    <div class="virus-tentacle tentacle-2"></div>
+    <div class="virus-tentacle tentacle-3"></div>
+    <div class="virus-tentacle tentacle-4"></div>
+    <div class="virus-tentacle tentacle-5"></div>
+    <div class="virus-tentacle tentacle-6"></div>
+    <div class="virus-tentacle tentacle-7"></div>
+    <div class="virus-tentacle tentacle-8"></div>
+    <div class="virus-tentacle tentacle-9"></div>
+  </div>
+  <div class="bottle-virus" id="virus-4">
+    <div class="virus-body virus-orange">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="virus-tentacle"></div>
+    <div class="virus-tentacle tentacle-2"></div>
+    <div class="virus-tentacle tentacle-3"></div>
+    <div class="virus-tentacle tentacle-4"></div>
+    <div class="virus-tentacle tentacle-5"></div>
+    <div class="virus-tentacle tentacle-6"></div>
+    <div class="virus-tentacle tentacle-7"></div>
+    <div class="virus-tentacle tentacle-8"></div>
+    <div class="virus-tentacle tentacle-9"></div>
+  </div>
+  <div class="bottle-virus" id="virus-5">
+    <div class="virus-body virus-orange">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="virus-tentacle"></div>
+    <div class="virus-tentacle tentacle-2"></div>
+    <div class="virus-tentacle tentacle-3"></div>
+    <div class="virus-tentacle tentacle-4"></div>
+    <div class="virus-tentacle tentacle-5"></div>
+    <div class="virus-tentacle tentacle-6"></div>
+    <div class="virus-tentacle tentacle-7"></div>
+    <div class="virus-tentacle tentacle-8"></div>
+    <div class="virus-tentacle tentacle-9"></div>
+  </div>
+  <div class="bottle-virus" id="virus-6">
+    <div class="virus-body virus-pink">
+      <div class="eye eye-left"></div>
+      <div class="eye eye-right"></div>
+      <div class="eyebrow eyebrow-left"></div>
+      <div class="eyebrow eyebrow-right"></div>
+      <div class="mouth"></div>
+    </div>
+    <div class="virus-tentacle"></div>
+    <div class="virus-tentacle tentacle-2"></div>
+    <div class="virus-tentacle tentacle-3"></div>
+    <div class="virus-tentacle tentacle-4"></div>
+    <div class="virus-tentacle tentacle-5"></div>
+    <div class="virus-tentacle tentacle-6"></div>
+    <div class="virus-tentacle tentacle-7"></div>
+    <div class="virus-tentacle tentacle-8"></div>
+    <div class="virus-tentacle tentacle-9"></div>
+  </div>
 </div>
 
-<!-- Footer inspired from www.nicesnippets.com/-->
-    <!-- Footer -->
-    <div class="container">
-      <hr />
-      <div class="text-center center-block">
-        <p class="txt-railway">@Laimo2020</p>
-        <br />
-        <a href="https://www.facebook.com/bootsnipp"
-          ><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i
-        ></a>
-        <a href="https://twitter.com/bootsnipp"
-          ><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i
-        ></a>
-        <a href="https://plus.google.com/+Bootsnipp-page"
-          ><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i
-        ></a>
-        <a href="mailto:bootsnipp@gmail.com"
-          ><i id="social-em" class="fa fa-envelope-square fa-3x social"></i
-        ></a>
-      </div>
-      <hr />
-    </div>
 
-    <br />
-    <!-- Footer -->
-    <!-- Footer -->
+
+		
+<!--wrapper end-->
+
+
 
 
 
