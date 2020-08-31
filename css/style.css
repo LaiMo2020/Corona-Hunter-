@@ -217,9 +217,9 @@ video {
   }
 }
 .myButton {
-	background-color:gray;
+	background-color:black;
 	border-radius:28px;
-	border:1px solid black;
+	border:1px solid #ce3939;;
 	display:block;
     text-align: center;
 	cursor:pointer;
@@ -246,4 +246,19 @@ a:hover{
 }
 .txt-railway{
     color:white;
+}
+#lab_social_icon_footer #social-fb:hover {
+  color: #3B5998;
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099FF;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
 }
