@@ -1,11 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400, 700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
 
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  background-color: gray;
+  background-color: lightgray;
   font-family: "Impact", cursive;
 }
 /* video full screen+responsive */
@@ -22,30 +22,15 @@ video {
   z-index: 1;
 }
 
-.button {
-  padding: 50px 42px;
-  box-shadow: 0px 0px 12px -2px rgba(0, 0, 0, 0.5);
-  line-height: 1.75;
-  background: pink;
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  position: relative;
-  transition: background-color 0.6s ease;
-  overflow: hidden;
+
+.main-div{
+  position: fixed;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 }
 
-/* styling the buttom */
-.start {
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  color: blue;
-}
+
 
 .navbar {
   background-color: #333;
@@ -230,4 +215,35 @@ video {
     background-color: #ce3939;
     letter-spacing: 0px;
   }
+}
+.myButton {
+	background-color:gray;
+	border-radius:28px;
+	border:1px solid black;
+	display:block;
+    text-align: center;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+}
+.myButton:hover {
+	background-color:#ce3939;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+a:hover{
+    color:white;
+}
+
+.container-1{
+    background-color: gray;
+}
+.txt-railway{
+    color:white;
 }
