@@ -4,10 +4,7 @@
   padding: 0;
   margin: 0;
 }
-body {
-  background-color: white;
-  font-family: "Impact", cursive;
-}
+
 /* video full screen+responsive */
 
 video {
@@ -15,223 +12,155 @@ video {
   width: 100%;
 }
 
-.menu-div {
-  /* position: absolute;
-  left: 0;
-  top: 0; */
-  z-index: 1;
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  background: #232323;
+  color: #cdcdcd;
+  font-family: "Impact", cursive;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 50px;  
+  z-index: 1;  
+  -webkit-user-select: none;
+  -moz-user-select: none;
+   -ms-user-select: none;
+       user-select: none;
+}
+
+#menuToggle a {
+  text-decoration: none;
+  color: #232323;
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+  color: #4f7794;
 }
 
 
-.main-div{
-  position: fixed;
-  top: 50%;
-  left:50%;
-  transform: translate(-50%, -50%);
+/* The hamburger button hidden inside an input element */
+#menuToggle input {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: -7px;
+  left: -5px;  
+  padding: 0;
+  cursor: pointer;  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */  
+  -webkit-touch-callout: none;
 }
 
-
-
-.navbar {
-  background-color: #333;
-  width: 25%;
-  height: 100vh;
+#menuToggle label {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+#menuToggle label span {
   display: none;
 }
 
-.navbar ul {
-  overflow: hidden;
+/*
+ * Hamburger
+ */
+#menuToggle label div {
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 6px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;  
+  z-index: 1;  
+  -webkit-transform-origin: 4px 0px;  
+      -ms-transform-origin: 4px 0px;  
+          transform-origin: 4px 0px;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#menuToggle label div:first-child {
+  -webkit-transform-origin: 0% 100%;
+      -ms-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
+}
+
+#menuToggle label div:nth-child(2) {
+    -webkit-transform-origin: 0% 0%;
+      -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
+}
+
+/* 
+ * Change the color of the hamburger when toggled
+ */
+#menuToggle input:checked + label div {
+  background: #232323;
+}
+
+/*
+ * Use absolute positioning to place the menu off-screen
+ */
+#menu {
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  background: #ededed;
   list-style-type: none;
-  padding-top: 50%;
-  margin: 0;
+  /* Hide the menu off-screen to the left */
+  left: -100%;
+  -webkit-transition: left 0.3s ease;
+  -o-transition: left 0.3s ease;
+  transition: left 0.3s ease; 
 }
 
-.navbar li {
-  display: block;
-  margin: 0;
-  padding: 5% 50px;
-  width: 100%;
+#menu li {
+  padding: 10px 0;
+  font-size: 22px;
 }
 
-.navbar li:hover {
-  cursor: pointer;
+/*
+ * Slide the menu in from left when the input is checked
+ */
+#menuToggle input:checked ~ ul {
+  left: 0;
 }
 
-.navbar li a {
-  color: #d3e3e3;
-  text-decoration: none;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.6em;
-  transition: all 0.5s;
-}
 
-.navbar li:hover {
-  cursor: pointer;
-  background-color: #ce3939;
-  letter-spacing: 10px;
-}
 
-.hamburger {
-  margin: 0;
-  margin-left: 15px;
-  padding: 0;
-  float: left;
-  transition: opacity 0.3s;
-}
 
-.hamburger:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.hamburger .line {
-  width: 50px;
-  height: 5px;
-  background: rgb(236, 66, 66);
-  margin: 8px auto;
-  transition: all 0.3s ease-in-out;
-  border-radius: 5px;
-}
-
-.hamburger .line:nth-child(1) {
-  background-color: #a77a33;
-}
-
-.hamburger .line:nth-child(2) {
-  background-color: #633200;
-}
-
-.hamburger .line:nth-child(3) {
-  background-color: #a77a33;
-}
-
-.hamburger.isactive .line:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.isactive .line:nth-child(1) {
-  transform: translateY(13px) rotate(45deg);
-}
-
-.hamburger.isactive .line:nth-child(3) {
-  transform: translateY(-13px) rotate(-45deg);
-}
-
-.navbar {
-  transition: all 2s ease-in-out;
-}
-
-.navbar.active {
-  display: block;
-  animation: fade 0.5s;
-}
-
-@keyframes fade {
-  from {
-    transform: translateX(-200px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@media screen and (max-width: 1360px) {
-  .h1 h1 {
-    font-size: 3em;
-    left: 35%;
-  }
-
-  .navbar {
-    width: 30%;
-  }
-
-  .navbar ul {
-    padding-left: 0%;
-  }
-
-  .navbar li {
-    padding: 3% 0;
-  }
-
-  .navbar li a {
-    font-size: 1.2em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hamburger {
-    float: right;
-  }
-
-  .h1 h1 {
-    left: 23%;
-    top: 50%;
-    font-size: 1.4em;
-  }
-
-  .navbar {
-    background-color: #333;
-    width: 100%;
-    height: 45vh;
-    display: none;
-  }
-
-  .navbar ul {
-    overflow: hidden;
-    list-style-type: none;
-    padding-top: 3%;
-    padding-left: 30%;
-    padding-right: 3%;
-    padding-bottom: 3%;
-    margin: 0;
-  }
-
-  .navbar li {
-    display: block;
-    margin: 0;
-    padding: 14px 20px;
-    width: 100%;
-    transition: background-color 0.5s;
-  }
-
-  .navbar li:hover {
-    cursor: pointer;
-    background-color: #ce3939;
-  }
-
-  .navbar li a {
-    color: #d3e3e3;
-    text-decoration: none;
-    padding: 14px 16px;
-    font-family: "Raleway", sans-serif;
-    font-size: 1em;
-    transition: all 1s;
-  }
-
-  .navbar li:hover {
-    cursor: pointer;
-    background-color: #ce3939;
-    letter-spacing: 0px;
-  }
-}
 .myButton {
-	background-color:black;
+	background-color:#ededed;
 	border-radius:28px;
-	border:1px solid #ce3939;;
+	
 	display:block;
     text-align: center;
 	cursor:pointer;
-	color:#ffffff;
+	color:black;
 	font-family:Arial;
-	font-size:17px;
+	
 	padding:16px 31px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px white;
+    font-size: 30px;
 }
 .myButton:hover {
-	background-color:#ce3939;
+	background-color: royalblue;
 }
 .myButton:active {
 	position:relative;
@@ -240,7 +169,10 @@ video {
 a:hover{
     color:white;
 }
-
+ .center-block{
+    margin-bottom: 20px;
+    
+}
 .container-1{
     background-color: gray;
 }
@@ -248,7 +180,7 @@ a:hover{
     color:white;
 }
 #lab_social_icon_footer #social-fb:hover {
-  color: #3B5998;
+  color: rgb(174, 182, 199);
 }
 
 #lab_social_icon_footer #social-tw:hover {
