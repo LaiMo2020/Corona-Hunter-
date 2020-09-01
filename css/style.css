@@ -12,7 +12,6 @@ video {
   width: 100%;
 }
 
-
 /* Base styles */
 body {
   margin: 0;
@@ -26,12 +25,12 @@ body {
   display: block;
   position: relative;
   top: 50px;
-  left: 50px;  
-  z-index: 1;  
+  left: 50px;
+  z-index: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
-   -ms-user-select: none;
-       user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #menuToggle a {
@@ -46,7 +45,6 @@ body {
   color: #4f7794;
 }
 
-
 /* The hamburger button hidden inside an input element */
 #menuToggle input {
   display: block;
@@ -54,11 +52,11 @@ body {
   height: 30px;
   position: absolute;
   top: -7px;
-  left: -5px;  
+  left: -5px;
   padding: 0;
-  cursor: pointer;  
+  cursor: pointer;
   opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */  
+  z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
 
@@ -82,11 +80,11 @@ body {
   margin-bottom: 6px;
   position: relative;
   background: #cdcdcd;
-  border-radius: 3px;  
-  z-index: 1;  
-  -webkit-transform-origin: 4px 0px;  
-      -ms-transform-origin: 4px 0px;  
-          transform-origin: 4px 0px;
+  border-radius: 3px;
+  z-index: 1;
+  -webkit-transform-origin: 4px 0px;
+  -ms-transform-origin: 4px 0px;
+  transform-origin: 4px 0px;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -94,14 +92,14 @@ body {
 
 #menuToggle label div:first-child {
   -webkit-transform-origin: 0% 100%;
-      -ms-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
+  -ms-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
 }
 
 #menuToggle label div:nth-child(2) {
-    -webkit-transform-origin: 0% 0%;
-      -ms-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+  -ms-transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
 }
 
 /* 
@@ -126,7 +124,7 @@ body {
   left: -100%;
   -webkit-transition: left 0.3s ease;
   -o-transition: left 0.3s ease;
-  transition: left 0.3s ease; 
+  transition: left 0.3s ease;
 }
 
 #menu li {
@@ -141,50 +139,46 @@ body {
   left: 0;
 }
 
-
-
-
 .myButton {
-	background-color:#ededed;
-	border-radius:28px;
-	
-	display:block;
-    text-align: center;
-	cursor:pointer;
-	color:black;
-	font-family:Arial;
-	
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px white;
-    font-size: 30px;
+  background-color: #ededed;
+  border-radius: 28px;
+
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  color: black;
+  font-family: Arial;
+
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px white;
+  font-size: 30px;
 }
 .myButton:hover {
-	background-color: royalblue;
+  background-color: #4f7794;
 }
 .myButton:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
-a:hover{
-    color:white;
+a:hover {
+  color: white;
 }
- .center-block{
-    margin-bottom: 20px;
-    
+.center-block {
+  margin-bottom: 20px;
 }
-.container-1{
-    background-color: gray;
+.container-1 {
+  background-color: gray;
 }
-.txt-railway{
-    color:white;
+.txt-railway {
+  color: white;
 }
 #lab_social_icon_footer #social-fb:hover {
   color: rgb(174, 182, 199);
 }
 
 #lab_social_icon_footer #social-tw:hover {
-  color: #4099FF;
+  color: #4099ff;
 }
 
 #lab_social_icon_footer #social-gp:hover {

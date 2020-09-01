@@ -1,104 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-      <link rel="stylesheet" href="css/instruction.css" />
-        <link rel="stylesheet" href="css/contact.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    
-    
+    <link
+      href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+          <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_dZeWW8a3A5qfz8Lu6HUze");
+        })();
+    </script>
+
+    <link rel="stylesheet" href="css/contact.css" />
+
     <title>Document</title>
-</head>
-<body>
-    <!--humberger menu -->
-    <div class="menu-div">
-        <div class="hamburger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-            </div>
-        <menu class="navbar">
-        <ul>
-            <li><a href="index.html"><b>home</b></a></li>
-            <li><a href="instruction.html"><b>instruction </b></a></li>
-          
-            <li><a href="contact.html"><b>contact</b></a></li>
+  </head>
+  <body>
+    <nav role="navigation">
+      <div id="menuToggle">
+        <!--
+    hidden checkbox is used as click reciever,
+    so you can use the :checked selector on it.
+    -->
+        <input name="toggle" type="checkbox" />
+        <label for="toggle">
+          <span>menu</span>
+          <!--
+      divs to be styled as a hamburger button
+      -->
+          <div></div>
+          <div></div>
+          <div></div>
+        </label>
+
+        <!--
+    the menu that will slide in from the left
+    -->
+        <ul id="menu">
+          <a href="index.html"><li>Home</li></a>
+          <a href="instruction.html"><li>Instruction</li></a>
+          <a href="contact.html"><li>Contact</li></a>
         </ul>
-        </menu>
-    </div>
- 
+      </div>
+    </nav>
+
+    <div class="container">
+     <form onsubmit="return sendMail(this);">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="" method="post">
+                    <fieldset>
+                        <legend class="text-xs-center header">Contact us</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 offset-md-2 text-xs-center"></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 offset-md-2 text-xs-center"></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 offset-md-2 text-xs-center"></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 offset-md-2 text-xs-center"></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 offset-md-2 text-xs-center"></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-xs-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div> </form>
+</div>
+
+<style>
+    .header {
+        color: #36A0FF;
+        font-size: 27px;
+        padding: 10px;
+    }
+
+    .bigicon {
+        font-size: 35px;
+        color: #36A0FF;
+    }
+</style>
 
 
-<div class="container">
-	<div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <div class="well well-sm">
-          <form class="form-horizontal" action="" method="post">
-          <fieldset>
-            <legend class="text-center">Contact us</legend>
-    
-            <!-- Name input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="name">Name</label>
-              <div class="col-md-9">
-                <input id="name" name="name" type="text" placeholder="Your name" class="form-control">
-              </div>
-            </div>
-    
-            <!-- Email input-->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="email">Your E-mail</label>
-              <div class="col-md-9">
-                <input id="email" name="email" type="text" placeholder="Your email" class="form-control">
-              </div>
-            </div>
-    
-            <!-- Message body -->
-            <div class="form-group">
-              <label class="col-md-3 control-label" for="message">Your message</label>
-              <div class="col-md-9">
-                <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5"></textarea>
-              </div>
-            </div>
-    
-            <!-- Form actions -->
-            <div class="form-group">
-              <div class="col-md-12 text-right">
-                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-              </div>
-            </div>
-          </fieldset>
-          </form>
+  <section id="lab_social_icon_footer">
+      <!-- Include Font Awesome Stylesheet in Header -->
+
+      <div class="container">
+        <div class="text-center center-block">
+          <a href="https://www.facebook.com/bootsnipp"
+            ><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i
+          ></a>
+          <a href="https://twitter.com/bootsnipp"
+            ><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i
+          ></a>
+          <a href="https://plus.google.com/+Bootsnipp-page"
+            ><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i
+          ></a>
+          <a href="mailto:#"
+            ><i id="social-em" class="fa fa-envelope-square fa-3x social"></i
+          ></a>
         </div>
       </div>
-	</div>
-</div>
- 
-
-   
-
-    
-<section id="lab_social_icon_footer">
-<!-- Include Font Awesome Stylesheet in Header -->
-
-<div class="container">
-        <div class="text-center center-block">
-                <a href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
-	            <a href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-	            <a href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
-	            <a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
-    </div>
-</div>
-</section>
-
-
-
-  <script src="scripts/instruction.js"></script>
-</body>
+    </section>
+ <script src="scripts/sendEmail.js"></script>
+  </body>
 </html>

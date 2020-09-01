@@ -1,5 +1,5 @@
 body {
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@ body {
   color: black;
   font-size: 20px;
   line-height: 50px;
-  transition: all 1.0s;
+  transition: all 1s;
 }
 
 /* .col.hidden.mine {
