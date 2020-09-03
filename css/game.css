@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+/* ----- google font  ----- */
 
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+/* ----- Basic Structure ----- */
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Inconsolata", monospace;
@@ -9,26 +15,15 @@ body {
 
 header {
   background-color: #59aec7;
-  position: relative;
+  
   height: 100px;
   width: 100vw;
+  position: fixed;
 }
-button {
-    position:inherit;
-  top: 50%;
-  left: 5%;
-  float: right;
-  font-size: 24px;
-  width: 160px;
-  height: 70px;
-  background-color: rgb(174, 0, 255);
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #59aec7;
-}
-button:hover {
-  background-color: #eee;
-}
+
+
+/* ----- style the 3 lines button ----- */
+
 #menuToggle {
   display: block;
   position: relative;
@@ -63,8 +58,8 @@ button:hover {
   left: -5px;
   padding: 0;
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0; 
+  z-index: 2; 
   -webkit-touch-callout: none;
 }
 
@@ -78,9 +73,7 @@ button:hover {
   display: none;
 }
 
-/*
- * Hamburger
- */
+/* ----- humberger ----- */
 #menuToggle label div {
   display: block;
   width: 30px;
@@ -110,16 +103,8 @@ button:hover {
   transform-origin: 0% 0%;
 }
 
-/* 
- * Change the color of the hamburger when toggled
- */
-#menuToggle input:checked + label div {
-  background: #232323;
-}
 
-/*
- * Use absolute positioning to place the menu off-screen
- */
+
 #menu {
   position: absolute;
   width: 300px;
@@ -128,7 +113,7 @@ button:hover {
   padding-top: 125px;
   background: #59aec7;
   list-style-type: none;
-  /* Hide the menu off-screen to the left */
+  
   left: -100%;
   -webkit-transition: left 0.3s ease;
   -o-transition: left 0.3s ease;
@@ -139,19 +124,22 @@ button:hover {
   padding: 10px 0;
   font-size: 22px;
 }
+#menuToggle input:checked + label div {
+  background: white;
+}
 
-/*
- * Slide the menu in from left when the input is checked
- */
+/* slide the menu in from left when the input is checked */
+
 #menuToggle input:checked ~ ul {
   left: 0;
 }
 
+/* board game style */
 
 #board {
-  border: 1px solid #333;
+  border: 1px solid black;
   display: inline-block;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .row {
@@ -188,6 +176,54 @@ button:hover {
 .row .col:last-child {
   border-right: none;
 }
-button {
-  justify-content: end;
+
+
+
+/* footer */
+
+footer{
+    background-color:  #59aec7;
+    margin-top: 0;
+    padding-top: 50x;
+    
 }
+  #social-fb{
+    color: black;
+    margin-top: 10px;
+
+}
+#social-tw{
+ color: black;
+}
+#social-gp{
+color: black;
+}
+#social-em {
+color: black;
+}
+ 
+#lab_social_icon_footer #social-fb:hover {
+  color: rgb(174, 182, 199);
+}
+
+#lab_social_icon_footer #social-tw:hover {
+  color: #4099ff;
+}
+
+#lab_social_icon_footer #social-gp:hover {
+  color: #d34836;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #f39c12;
+}
+h6{
+text-align: center;
+}
+@media only screen and (max-width: 600px){
+     h1{
+        font-size: 100px;
+}}
+@media only screen and (max-width: 600px){
+    
+}}

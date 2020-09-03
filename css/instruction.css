@@ -12,11 +12,18 @@
 body {
   margin: 0;
   padding: 0;
-  background: #232323;
-  color: #cdcdcd;
+ 
+  
   /* font-family: "Impact", cursive; */
 }
 
+header {
+  background-color: #59aec7;
+  
+  height: 100px;
+  width: 100vw;
+  
+}
 
 
 #menuToggle {
@@ -33,7 +40,7 @@ body {
 
 #menuToggle a {
   text-decoration: none;
-  color: #232323;
+  color: black;
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
@@ -77,7 +84,7 @@ body {
   height: 2px;
   margin-bottom: 6px;
   position: relative;
-  background: #cdcdcd;
+  background: black;
   border-radius: 3px;
   z-index: 1;
   -webkit-transform-origin: 4px 0px;
@@ -104,7 +111,7 @@ body {
  * Change the color of the hamburger when toggled
  */
 #menuToggle input:checked + label div {
-  background: #232323;
+  background: white;
 }
 
 /*
@@ -116,7 +123,7 @@ body {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #ededed;
+  background: #59aec7;
   list-style-type: none;
   /* Hide the menu off-screen to the left */
   left: -100%;
@@ -137,6 +144,8 @@ body {
   left: 0;
 }
 
+
+
 h1{
     text-align: center;
 }
@@ -144,10 +153,10 @@ h1{
 p {
   padding:10vh;
   margin:0;
-  color: white;
+  color: black;;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   h1 p {
    text-align: center;
    position: relative;
@@ -161,16 +170,30 @@ p {
    padding-top: 50px;
    text-justify: inter-cluster;
   }
-}
-.center-block {
-  margin-bottom: 20px;
-}
-.container-1 {
-  background-color: gray;
-}
-/* .txt-railway {
-  color: white;
 } */
+/* footer */
+
+footer{
+    background-color:  #59aec7;
+    margin-top: 0;
+    padding-top: 50x;
+    
+}
+  #social-fb{
+    color: black;
+    margin-top: 10px;
+
+}
+#social-tw{
+ color: black;
+}
+#social-gp{
+color: black;
+}
+#social-em {
+color: black;
+}
+ 
 #lab_social_icon_footer #social-fb:hover {
   color: rgb(174, 182, 199);
 }
@@ -185,4 +208,15 @@ p {
 
 #lab_social_icon_footer #social-em:hover {
   color: #f39c12;
+}
+@media only screen and (max-width: 600px){
+    body h1{
+        font-size: 20px;
+}}
+@media only screen and (max-width: 600px){
+    body {
+        font-size: 10px;
+}}
+h6{
+text-align: center;
 }

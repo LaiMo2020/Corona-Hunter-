@@ -18,35 +18,47 @@
     <title>Document</title>
   </head>
   <body>
-   <nav role="navigation">
-      <div id="menuToggle">
-        <!--
+  
+  <header >
+		<nav role="navigation">
+			<div id="menuToggle">
+				<!--
     hidden checkbox is used as click reciever,
-    so you can use the :checked selector on it.
+    
     -->
-        <input name="toggle" type="checkbox" />
-        <label for="toggle">
-          <span>menu</span>
-          <!--
+				<input name="toggle" type="checkbox" />
+				<label for="toggle">
+            <span>menu</span>
+            <!--
       divs to be styled as a hamburger button
       -->
-          <div></div>
-          <div></div>
-          <div></div>
-        </label>
+            <div></div>
+            <div></div>
+            <div></div>
+          </label>
 
-        <!--
+				<!--
     the menu that will slide in from the left
     -->
-        <ul id="menu">
-          <a href="index.html"><li>Home</li></a>
-          <a href="instruction.html"><li>Instruction</li></a>
-          <a href="contact.html"><li>Contact</li></a>
-        </ul>
-      </div>
-    </nav>
-  
+				<ul id="menu">
+					<a href="index.html">
+						<li>Home</li>
+					</a>
+					<a href="game.html">
+						<li>Start the game</li>
+					</a>
+					<a href="instruction.html">
+						<li>Instruction</li>
+					</a>
+					<a href="contact.html">
+						<li>Contact</li>
+					</a>
+				</ul>
+			</div>
+		</nav>
 
+		<h1>Hunt The Virus</h1>
+	</header>
     <div class="text">
       <h1>HOW TO PLAY</h1>
 
@@ -65,9 +77,9 @@
         the board or in a corner have fewer neighbors. The board does not wrap
         around the edges. If you open a square with 0 neighboring viruses, all
         its neighbors will automatically open. This can cause a large area to
-        automatically open.
-        <strong>refernce:</strong>
-        http://www.freeminesweeper.org/
+        automatically open.<br>
+        <strong>refernce:
+        http://www.freeminesweeper.org/</strong>
       </p>
 
       <br />
@@ -98,32 +110,33 @@
         droplets that are able to stay suspended in the air for longer periods
         of time in enclosed spaces.[14] It is most contagious during the first
         three days after the onset of symptoms, although spread is possible
-        before symptoms appear, and from people who do not show symptoms.
+        before symptoms appear, and from people who do not show symptoms.<br>
+        <strong>refernce:
+        https://www.wikipedia.org/
+      </strong>
       </p>
 
    
     </div>
 
-    <section id="lab_social_icon_footer">
-      <!-- Include Font Awesome Stylesheet in Header -->
+    <footer>
+		<section id="lab_social_icon_footer">
+			<!-- Include Font Awesome Stylesheet in Header -->
 
-      <div class="container">
-        <div class="text-center center-block">
-          <a href="https://www.facebook.com/bootsnipp"
-            ><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i
-          ></a>
-          <a href="https://twitter.com/bootsnipp"
-            ><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i
-          ></a>
-          <a href="https://plus.google.com/+Bootsnipp-page"
-            ><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i
-          ></a>
-          <a href="mailto:#"
-            ><i id="social-em" class="fa fa-envelope-square fa-3x social"></i
-          ></a>
-        </div>
-      </div>
-    </section>
+			<div class="container">
+				<div class="text-center center-block">
+					<a
+						href="https://www.facebook.com/bootsnipp"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+					<a
+						href="https://twitter.com/bootsnipp"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+					<a
+						href="https://plus.google.com/+Bootsnipp-page"><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+					<a href="mailto:#"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
+				</div>
+			</div>
+		</section>
+		<h6>&copy; Copyright 2020 laimo2020</h6>
+	</footer>
 
     <script src="scripts/instruction.js"></script>
   </body>
