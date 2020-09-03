@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 
 * {
   padding: 0;
@@ -7,24 +7,27 @@
 
 /* video full screen+responsive */
 
-
 /* Base styles */
 body {
   margin: 0;
   padding: 0;
- 
-  
-  /* font-family: "Impact", cursive; */
+  font-family: "Inconsolata", monospace;
 }
 
 header {
   background-color: #59aec7;
-  
+
   height: 100px;
   width: 100vw;
-  
 }
-
+h1 {
+  text-align: center;
+  font-size: 40px;
+}
+/* h4{
+    text-align: center;
+    margin-top: 20px;
+} */
 
 #menuToggle {
   display: block;
@@ -144,16 +147,31 @@ header {
   left: 0;
 }
 
+div.a {
+  border: 1px solid #ccc;
 
+  text-align: center;
 
-h1{
-    text-align: center;
+  box-shadow: 0 0 15px;
+  border-radius: 10px;
+  margin: 40px 80px 40px 80px;
+  padding: 10px 20px 10px 20px;
+}
+div.b {
+  border: 1px solid #ccc;
+
+  margin: 40px 80px 40px 80px;
+
+  box-shadow: 0 0 15px;
+  border-radius: 10px;
+  text-align: center;
+
+  margin-top: 40px;
+  padding: 10px 20px 10px 20px;
 }
 
-p {
-  padding:10vh;
-  margin:0;
-  color: black;;
+h4 {
+  text-align: center;
 }
 
 /* @media screen and (max-width: 600px) {
@@ -173,27 +191,25 @@ p {
 } */
 /* footer */
 
-footer{
-    background-color:  #59aec7;
-    margin-top: 0;
-    padding-top: 50x;
-    
+footer {
+  background-color: #59aec7;
+  margin-top: 40px;
+  padding-top: 50x;
 }
-  #social-fb{
-    color: black;
-    margin-top: 10px;
-
+#social-fb {
+  color: black;
+  margin-top: 10px;
 }
-#social-tw{
- color: black;
+#social-tw {
+  color: black;
 }
-#social-gp{
-color: black;
+#social-gp {
+  color: black;
 }
 #social-em {
-color: black;
+  color: black;
 }
- 
+
 #lab_social_icon_footer #social-fb:hover {
   color: rgb(174, 182, 199);
 }
@@ -209,14 +225,26 @@ color: black;
 #lab_social_icon_footer #social-em:hover {
   color: #f39c12;
 }
-@media only screen and (max-width: 600px){
-    body h1{
-        font-size: 20px;
-}}
-@media only screen and (max-width: 600px){
-    body {
-        font-size: 10px;
-}}
-h6{
-text-align: center;
+@media only screen and (max-width: 600px) {
+ div.b {
+   margin:40px 40px 40px 40px;
+  font-size: 15px;
+  text-align: justify;
+  padding: 10px 20px 10px 20px;
+  }
 }
+@media only screen and (max-width: 600px) {
+  div.a  {
+  margin:40px 40px 40px 40px;
+  font-size: 15px;
+  text-align: justify;
+  padding: 10px 20px 10px 20px;
+  }
+}
+h6 {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  h1  {
+font-size: 25px;
+  }

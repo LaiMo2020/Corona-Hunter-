@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700);
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -15,6 +14,7 @@ header {
   
   height: 100px;
   width: 100vw;
+
   
 }
 /* video full screen+responsive */
@@ -36,6 +36,7 @@ video {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  width:80%;
   user-select: none;
 }
 
@@ -144,13 +145,39 @@ video {
 #menuToggle input:checked ~ ul {
   left: 0;
 }
+.myButton {
+	
+	border-radius:28px;
+	border:1px solid black;
 
+	display:block;
+    text-align: center;
+	cursor:pointer;
+
+	font-family:Arial;
+	background-color: #59aec7;
+
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px white;
+    font-size: 30px;
+}
+.myButton:hover {
+
+color:black;
+
+}
+/* .myButton:active {
+	position:relative;} */
+    .start{
+        color: black;
+    }
 
 /* footer */
 
 footer{
     background-color:  #59aec7;
-    margin-top: 0;
+    margin-top: 50px;
     padding-top: 50x;
     
 }
@@ -194,4 +221,8 @@ color: black;
 }}
 h6{
 text-align: center;
-}
+}@media only screen and (max-width: 600px) {
+  body h1  {
+      margin-top: 14px;
+font-size: 25px;
+  }}

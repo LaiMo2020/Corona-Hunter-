@@ -1,16 +1,10 @@
-function sendMail(contactForm) {
-    emailjs.send("gmail", "laith", {
-        "from_name": contactForm.name.value,
-        "from_email": contactForm.emailaddress.value,
-        "project_request": contactForm.projectsummary.value
-    })
-    .then(
-        function(response) {
-            console.log("SUCCESS", response);
-        },
-        function(error) {
-            console.log("FAILED", error);
+<script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+               
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_form', this);
+            });
         }
-    );
-    return false;  
-}
+    </script>
