@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+/* ----- google font  ----- */
+
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -11,12 +13,12 @@ body {
 
 header {
   background-color: #59aec7;
-  
+
   height: 100px;
   width: 100vw;
-
-  
 }
+
+
 /* video full screen+responsive */
 
 video {
@@ -24,8 +26,7 @@ video {
   width: 100%;
 }
 
-/* Base styles */
-
+/*menu */
 
 #menuToggle {
   display: block;
@@ -36,7 +37,7 @@ video {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  width:80%;
+  width: 80%;
   user-select: none;
 }
 
@@ -62,8 +63,8 @@ video {
   left: -5px;
   padding: 0;
   cursor: pointer;
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
+  opacity: 0;
+  z-index: 2;
   -webkit-touch-callout: none;
 }
 
@@ -116,9 +117,6 @@ video {
   background: white;
 }
 
-/*
- * Use absolute positioning to place the menu off-screen
- */
 #menu {
   position: absolute;
   width: 300px;
@@ -127,7 +125,7 @@ video {
   padding-top: 125px;
   background: #59aec7;
   list-style-type: none;
-  /* Hide the menu off-screen to the left */
+
   left: -100%;
   -webkit-transition: left 0.3s ease;
   -o-transition: left 0.3s ease;
@@ -145,57 +143,51 @@ video {
 #menuToggle input:checked ~ ul {
   left: 0;
 }
+
+/* start buttom style  */
+
 .myButton {
-	
-	border-radius:28px;
-	border:1px solid black;
+  border-radius: 90px;
+  border: 1px solid black;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  font-family: Arial;
+  background-color: #2bc1f2;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px white;
+  font-size: 30px;
+  width: 200px;
+  box-shadow: 0 0 15px;
 
-	display:block;
-    text-align: center;
-	cursor:pointer;
-
-	font-family:Arial;
-	background-color: #59aec7;
-
-	padding:16px 31px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px white;
-    font-size: 30px;
+  margin-left: 43%;
 }
 .myButton:hover {
-
-color:black;
-
+  color: black;
 }
-/* .myButton:active {
-	position:relative;} */
-    .start{
-        color: black;
-    }
+
+.start {
+  color: black;
+}
+
+
 
 /* footer */
 
-footer{
-    background-color:  #59aec7;
-    margin-top: 50px;
-    padding-top: 50x;
-    
+footer {
+  background-color: #59aec7;
+  margin-top: 50px;
+  padding-top: 50x;
 }
-  #social-fb{
-    color: black;
-    margin-top: 10px;
+#social-fb {
+  color: black;
+  margin-top: 10px;
+}
+#social-tw {
+  color: black;
+}
 
-}
-#social-tw{
- color: black;
-}
-#social-gp{
-color: black;
-}
-#social-em {
-color: black;
-}
- 
 #lab_social_icon_footer #social-fb:hover {
   color: rgb(174, 182, 199);
 }
@@ -211,18 +203,36 @@ color: black;
 #lab_social_icon_footer #social-em:hover {
   color: #f39c12;
 }
-@media only screen and (max-width: 600px){
-    body h1{
-        font-size: 20px;
-}}
-@media only screen and (max-width: 600px){
-    body {
-        font-size: 10px;
-}}
-h6{
-text-align: center;
-}@media only screen and (max-width: 600px) {
-  body h1  {
-      margin-top: 14px;
-font-size: 25px;
-  }}
+
+/* resposive for other devieces */
+@media only screen and (max-width: 600px) {
+  body h1 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 10px;
+  }
+}
+h6 {
+  text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  body h1 {
+    margin-top: 14px;
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .myButton {
+    font-size: 15px;
+    width: 160px;
+    margin-left: 105px;
+  }
+}
+@media only screen and (device-width: 768px) and (max-device-width: 1024px) {
+  .myButton {
+    margin-left: 40%;
+  }
+}
