@@ -163,6 +163,9 @@ div#form_sample {
   margin-top: 20px;
   box-shadow: 0 0 15px;
   border-radius: 6px;
+   display: flex;
+            justify-content: center;
+            align-items: center;
 }
 #main h1 {
   margin-top: 40px;
@@ -243,28 +246,30 @@ footer {
 
 @media only screen and (max-width: 600px) {
   h1 {
-    padding-top: 30px;
-    font-size: 40px;
+    padding-top: 44px;
+    font-size: 22px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  #form_sample {
+  div#form_sample {
     margin-left: 30px;
-    width: 200spx;
+    width: 270px;
     margin-right: 30px;
+    padding-left: 10px;
   }
 }
 @media only screen and (max-width: 600px) {
   header {
-    width: 800px;
+    width: 300pxx;
     margin-bottom: 120px;
   }
 }
 @media only screen and (max-width: 600px) {
-  footer {
-    width: 800px;
+  header input {
 
-    margin-top: 0;
+widows: 10px;
+height: 10px;
+    
   }
 }

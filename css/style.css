@@ -37,7 +37,7 @@ video {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  width: 80%;
+ 
   user-select: none;
 }
 
@@ -149,10 +149,10 @@ video {
 .myButton {
   border-radius: 90px;
   border: 1px solid black;
-  display: block;
+  
   text-align: center;
   cursor: pointer;
-  font-family: Arial;
+  font-family: "Inconsolata", monospace;
   background-color: #2bc1f2;
   padding: 16px 31px;
   text-decoration: none;
@@ -162,6 +162,10 @@ video {
   box-shadow: 0 0 15px;
 
   margin-left: 43%;
+
+   display: flex;
+            justify-content: center;
+            align-items: center;
 }
 .myButton:hover {
   color: black;
@@ -206,13 +210,15 @@ footer {
 
 /* resposive for other devieces */
 @media only screen and (max-width: 600px) {
-  body h1 {
+header {
     font-size: 20px;
+    width:100%
   }
 }
 @media only screen and (max-width: 600px) {
   body {
     font-size: 10px;
+
   }
 }
 h6 {
@@ -221,18 +227,19 @@ h6 {
 @media only screen and (max-width: 600px) {
   body h1 {
     margin-top: 14px;
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 @media only screen and (max-width: 640px) {
   .myButton {
     font-size: 15px;
     width: 160px;
-    margin-left: 105px;
+   margin-left: 100px;
+   
   }
 }
 @media only screen and (device-width: 768px) and (max-device-width: 1024px) {
-  .myButton {
-    margin-left: 40%;
+ header input  {
+    width:15px;
   }
 }
