@@ -182,7 +182,7 @@ video {
 footer {
   background-color: #59aec7;
   margin-top: 50px;
-  padding-top: 50x;
+  padding-top: 50px;
 }
 #social-fb {
   color: black;
@@ -238,16 +238,5 @@ h6 {
    
   }
 }
-@media only screen and (max-width: 780px) {
-  .myButton {
-   
-   
-   margin-left: 37%;
-  }
 
-@media only screen and (max-width: 300px) {
-  .myButton {
-   
-   
-   margin-left: 37%;
-  }
+

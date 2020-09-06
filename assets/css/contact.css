@@ -215,7 +215,7 @@ div#fugo {
 footer {
   background-color: #59aec7;
   margin-top: 0;
-  padding-top: 50x;
+  padding-top: 50px;
 }
 
 #social-fb {
@@ -261,14 +261,14 @@ footer {
 }
 @media only screen and (max-width: 600px) {
   header {
-    width: 300pxx;
+    width: 300px;
     margin-bottom: 120px;
   }
 }
 @media only screen and (max-width: 600px) {
   header input {
 
-widows: 10px;
+width: 10px;
 height: 10px;
     
   }
