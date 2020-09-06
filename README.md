@@ -1,39 +1,68 @@
-<img src="https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png" style="margin: 0;">
+# Milestone Project 2: Hunt The Virus 
 
-Welcome LaiMo2020,
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project.
+![](assets/images/responsive.devices.png
 
-## Gitpod Reminders
+This project includes “hunt the virus” a game related to the ongoing Corona crisis in the world. It's based on Minesweeper game and gives the players opportunity to find and kill viruses. Beside the game the page includes an introductory video, to raise the players attention and creates a story motivating the players to play the game. 
+From the main menu the users can access the game instruction, and a background page with facts and information about the  Corona virus. And finally a contact page that enables the users to contact me, using an easy contact form. 
+For the creation of the page I used html, css, bootstrap 4, javascript, JQuery, Google mail mailJS . 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+ 
+ **Note: The game is based on Minesweeper game function. 
 
-`python3 -m http.server`
+## UX
 
-A blue button should appear to click: *Make Public*,
+#### The purpose of the webpage is to give the users opportunity to release stress connected to the ongoing corona crisis, by playfully preventing further infections. It addresses mainly people who like playing logic games and fans of mine sweeper who are looking for a new interpretation of the game.  The user will be able to have a fun game experience while learning about  an ongoing societal issue. They can contact me for further information about the game or question related to site development.
 
-Another blue button should appear to click: *Open Browser*.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: *Make Public*,
 
-Another blue button should appear to click: *Open Browser*.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the backend lessons.
 
-## Updates Since The Instructional Video
+## User Stories 
 
-We continually tweak and adjust this template to help give you the best experience. Here are the updates since the original video was made:
+### As a user of the page, the user will be able to :
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+- Play a game
+- Train their logical thinking
+- Follow a video story
+- Learn how to play the game
+- Learn about Corona virus
+- Release the stress by enjoying destroying the viruses, that’s everywhere in the news
+- Contact me
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
---------
+## Wireframes
+#### For the creation of my wireframes I used the Balsamiqu program (see “technologies used). Throughout the development of the webpage the wireframes were very helpful for me to reach the final design.
+#### I have created mobile wireframes and desktop wireframes.
 
-Happy coding!
+1. Mobile Wireframes
+
+- [Home-page](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_Homepage-phone.png)
+
+- [Legal-info](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_legalinfo-phone.png)
+
+- [Contact](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_Contact-phone.png)
+- [Gallery](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_project-phone.png)
+- [Career](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_Career-phone.png)
+
+
+
+2. Desktop Wireframes 
+
+- [Home-page](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_Homepage.png)
+
+- [Legal-info](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_Legal-info.png)
+
+- [Contact](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_contact.png)
+
+- [Gallery](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_Project.png)
+
+- [Career](https://github.com/LaiMo2020/MS1/blob/master/assets/images/wireframe/MS-1_career.png)
+
+
+
+
+
