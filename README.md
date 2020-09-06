@@ -147,3 +147,55 @@ Inspiration from others developers
 ### 13. [Nicesnippets](www.nicesnippets.com/)
 
 Inspiration from others developers
+
+
+
+## Testing 
+
+### Testing and review of the webpage
+
+1. I have tested the webpage myself in the following browsers and devices:
+- Google Chrome
+- Firefox
+- Safari
+- Iphone XR
+- MacBook Air
+
+2. I have sent the webpage to family and friends who tested the page and responsiveness on following browser and devices:
+- Google Chrome
+- Firefox
+- Safari
+- iPad
+- iPhone SE
+
+## Deployment:
+
+### The following steps were taken for deployment of my site:
+
+1. Creating my own account on github.com. My public profile can be accessed here: - [MS1/my project](https://laimo2020.github.io/Corona-Hunter-/)
+)
+2. Login into gitpod.com using my GitHub account
+3. Creating a project repository Used the template of Code Institute to facilitate the environment of the editor
+4. Clicked on the gitpod green botton to accsses to my IDE on gitpod.
+5. selected the Master branch GitHub pages section as source 
+6. Using GIT to have different versions with a comment of my project   
+7. GIT push leads me to the final URL of my projected that you can find in the settings and that can be shared with others to access the page in a browser [Hunt the Virus MS2](https://laimo2020.github.io/MS1/)
+
+
+
+## Acknowledgement 
+- My mentor Seun (Seun Owonikoko) for a great advices and support.
+- The code institute community on slack for feedback on questions and helpful advices 
+- Family members for help with testing and feedback on the page.
+
+## References
+ * *Code Institute course modules.
+* https://codepen.io/
+* https://getbootstrap.com/
+* https://www.w3.org/
+* https://getbootstrap.com/docs/4.5/getting-started/introduction/
+* https://www.freeformatter.com/html-formatter.html#ad-output
+* https://unsplash.com/
+* http://ami.responsivedesign.is/#
+
+
