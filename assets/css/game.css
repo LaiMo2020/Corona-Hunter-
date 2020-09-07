@@ -24,6 +24,10 @@ h1 {
   text-align: center;
   font-size: 40px;
 }
+
+h6 {
+  text-align: center;
+}
 /* -----menu----- */
 
 #menuToggle {
@@ -108,7 +112,7 @@ h1 {
 
 #menu {
   position: absolute;
-  width: 300px;
+  width: 150px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -200,13 +204,5 @@ footer {
   color: #4099ff;
 }
 
-#lab_social_icon_footer #social-gp:hover {
-  color: #d34836;
-}
 
-#lab_social_icon_footer #social-em:hover {
-  color: #f39c12;
-}
-h6 {
-  text-align: center;
-}
+

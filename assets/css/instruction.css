@@ -120,7 +120,7 @@ h4 {
 
 #menu {
   position: absolute;
-  width: 300px;
+   width: 250spx;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -191,13 +191,7 @@ footer {
   color: #4099ff;
 }
 
-#lab_social_icon_footer #social-gp:hover {
-  color: #d34836;
-}
 
-#lab_social_icon_footer #social-em:hover {
-  color: #f39c12;
-}
 
 /* responsive for other devieces  */
 

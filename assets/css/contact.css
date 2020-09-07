@@ -123,7 +123,7 @@ h6 {
 
 #menu {
   position: absolute;
-  width: 300px;
+  width: 250px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
@@ -234,20 +234,14 @@ footer {
   color: #4099ff;
 }
 
-#lab_social_icon_footer #social-gp:hover {
-  color: #d34836;
-}
 
-#lab_social_icon_footer #social-em:hover {
-  color: #f39c12;
-}
 
 /* responsive for other devices  */
 
 @media only screen and (max-width: 600px) {
   h1 {
-    padding-top: 44px;
-    font-size: 22px;
+    padding-top: 48px;
+    font-size: 18px;
   }
 }
 
@@ -261,7 +255,7 @@ footer {
 }
 @media only screen and (max-width: 600px) {
   header {
-    width: 300px;
+  
     margin-bottom: 120px;
   }
 }
@@ -273,3 +267,37 @@ height: 10px;
     
   }
 }
+@media only screen and (max-width: 1040px) {
+  div#form_sample {
+   width: 40%;
+   margin-left: 20px;
+  
+  
+  }
+}
+
+@media only screen and (max-width: 1040px) {
+  header {
+    
+    width: 50%;
+    margin-bottom: 120px;
+  
+  
+  }
+}
+@media only screen and (max-width: 1040px) {
+  h1 {
+  font-size: 30px;
+  padding-top: 35px;
+  
+  
+  }
+}
+@media only screen and (max-width: 1040px) {
+ footer {
+    
+    width: 50%;
+    margin-bottom: 120px;
+  
+  
+  }
