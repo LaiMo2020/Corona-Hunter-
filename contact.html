@@ -17,48 +17,23 @@
 
     <link rel="stylesheet" href="assets/css/contact.css" />
 
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Contact</title>
   </head>
   <body>
     <header>
-      <nav role="navigation">
-        <div id="menuToggle">
-          <!--
-    hidden checkbox is used as click reciever,
+<div class="topnav" id="myTopnav">
+  <a href="game.html"  >Start Game</a>
+  <a href="index.html" >Home</a>
+  <a href="contact.html" class="active">Contact</a>
+  <a href="instruction.html">Instructiont</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
     
-    -->
-          <input name="toggle" type="checkbox" />
-          <label for="toggle">
-            <span>menu</span>
-            <!--
-      divs to be styled as a hamburger button
-      -->
-            <div></div>
-            <div></div>
-            <div></div>
-          </label>
-
-          <!--
-    the menu that will slide in from the left
-    -->
-          <ul id="menu">
-            <a href="index.html">
-              <li>Home</li>
-            </a>
-            <a href="game.html">
-              <li>Start </li>
-            </a>
-            <a href="instruction.html">
-              <li>Instruction</li>
-            </a>
-            <a href="contact.html">
-              <li>Contact</li>
-            </a>
-          </ul>
-        </div>
-      </nav>
-
-      <h1>Hunt The Virus</h1>
+  </a>
+</div>
+        
     </header>
 
     <!-- contact form  -->
@@ -84,5 +59,6 @@
     </footer>
     <script src="assets/scripts/sendEmail.js"></script>
     <script src="assets/scripts/contact.js"></script>
+      <script src="assets/scripts/index.js"></script>
   </body>
 </html>

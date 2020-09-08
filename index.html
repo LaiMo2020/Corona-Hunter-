@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home Page</title>
 
     <link
       rel="stylesheet"
@@ -22,50 +22,23 @@
   <body>
 
    	<header >
-       <form id="toggle">
-		<nav role="navigation">
-			<div id="menuToggle">
-				<!--
-   
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="game.html" >Start Game</a>
+  <a href="index.html" class="active">Home</a>
+  <a href="contact.html">Contact</a>
+  <a href="instruction.html">Instructiont</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
     
-    -->
-				<input name="toggle" type="checkbox" />
-				<label for="toggle">
-            <span>menu</span>
-            <!--
-      divs to be styled as a hamburger button
-      -->
-            <div></div>
-            <div></div>
-            <div></div>
-          </label>
-
-				<!--
-    the menu that will slide in from the left
-    -->
-				<ul id="menu">
-					<a href="index.html">
-						<li>Home</li>
-					</a>
-					<a href="game.html">
-						<li>Start</li>
-					</a>
-					<a href="instruction.html">
-						<li>Instruction</li>
-					</a>
-					<a href="contact.html">
-						<li>Contact</li>
-					</a>
-				</ul>
-			</div>
-		</nav>
-       </form>
-
-		<h1>Hunt The Virus</h1>
+  </a>
+</div>
 	</header>
 
 
-    <div classe="container">
+   
       <video autoplay muted loop id="myVideo">
         <source src="video/intro-f.m4v" type="video/mp4" />
         <div class="div"></div>
@@ -73,7 +46,7 @@
 
         Your browser does not support HTML5 video.
       </video>
-    </div>
+  
 
     ​
      <div class="center">
@@ -98,6 +71,6 @@
 		<h6>&copy; Copyright 2020 laimo2020</h6>
 	</footer>
 
-    
+      <script src="assets/scripts/index.js"></script>
   </body>
 </html>

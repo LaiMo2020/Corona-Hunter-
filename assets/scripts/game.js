@@ -42,9 +42,9 @@ function gameOver(isWin) {
   $(".col:not(.virus)").html(function () {
     const $cell = $(this);
     const count = getVirusCount($cell.data("row"), $cell.data("col"));
-     return count === 0 ? " " : count; // hiding the number od the cell has no viruses after the game over 
+     return count === 0 ? " " : count; // hiding the number if the cell has no viruses (0) virus, after the game over 
   });
-  $(".col.hidden").removeClass("hidden");
+  $(".col.hidden").removeClass("hidden"); // hiding the cols after the game is Over
   setTimeout(function () {
     alert(message);
     restart();
