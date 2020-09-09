@@ -7,14 +7,11 @@
 }
 body {
   font-family: "Inconsolata", monospace;
-
 }
 /* header */
 
 header {
   background-color: #59aec7;
-
- 
 }
 
 /* video full screen+responsive */
@@ -28,7 +25,7 @@ video {
 
 .topnav {
   overflow: hidden;
-  background-color: #59aec7
+  background-color: #59aec7;
 }
 
 .topnav a {
@@ -43,7 +40,6 @@ video {
 
 .topnav a:hover {
   background-color: #ddd;
- 
 }
 
 .topnav a.active {
@@ -54,40 +50,33 @@ video {
 .topnav .icon {
   display: none;
 }
-#start{
+
+/* start button */
+#start {
   box-shadow: 3px 4px 0px 0px #899599;
-	background:linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
-	background-color:#ededed;
-	border-radius:15px;
-	border:1px solid #d6bcd6;
-	display:inline-block;
-	cursor:pointer;
-	color:#3a8a9e;
-	font-family:Arial;
-	font-size:17px;
-	padding:7px 25px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #e1e2ed;
-    margin-top: 5px;
+  background: linear-gradient(to bottom, #ededed 5%, #bab1ba 100%);
+  background-color: #ededed;
+  border-radius: 15px;
+  border: 1px solid #d6bcd6;
+  display: inline-block;
+  cursor: pointer;
+  color: #3a8a9e;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 7px 25px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #e1e2ed;
+  margin-top: 5px;
 }
 #start:hover {
-	background:linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
-	background-color:#bab1ba;
+  background: linear-gradient(to bottom, #bab1ba 5%, #ededed 100%);
+  background-color: #bab1ba;
 }
 #start:active {
-	position:relative;
-	top:1px;
-}
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
+  position: relative;
+  top: 1px;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -98,13 +87,7 @@ video {
     display: block;
     text-align: left;
   }
-}
 
-
-
-
-
-/* start buttom style  */
 
 
 
@@ -130,30 +113,28 @@ footer {
 #lab_social_icon_footer #social-tw:hover {
   color: #4099ff;
 }
-
-
-
-
+h6 {
+  text-align: center;
+}
 /* resposive for other devieces */
-/* @media only screen and (max-width: 600px) {
-  header {
-    font-size: 20px;
-    width: 100%;
-  }
-} */
+
 @media only screen and (max-width: 600px) {
   body {
     font-size: 10px;
   }
 }
-h6 {
-  text-align: center;
-}
-@media only screen and (max-width: 600px) {
-  body h1 {
-    margin-top: 14px;
-    font-size: 22px;
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
 }
 
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
 

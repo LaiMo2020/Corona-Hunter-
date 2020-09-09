@@ -14,28 +14,27 @@ body {
   font-family: "Inconsolata", monospace;
 }
 
-/* header */
 
 
-h1 {
-  text-align: center;
-  font-size: 40px;
-}
+/* title of texts */
 h4 {
   text-align: center;
 }
+/* copy right position  */
+h6 {
+  text-align: center;
+}
 
-#start{
-     background-color: #fff;
- border: 1px solid #ccc;
+/* start button */
+
+#start {
+  background-color: #fff;
+  border: 1px solid #ccc;
   box-shadow: 0 0 15px;
   border-radius: 30px;
   color: black;
 }
-
-
-
-
+ /* styling the text  */
 div.a {
   border: 1px solid #ccc;
 
@@ -59,17 +58,12 @@ div.b {
   padding: 10px 20px 10px 20px;
 }
 
-
-
-
-
-
 /* responsive for other devieces  */
 
 @media only screen and (max-width: 600px) {
   div.b {
     margin: 40px 40px 40px 40px;
-    font-size: 15px;
+    font-size: 10px;
     text-align: justify;
     padding: 10px 20px 10px 20px;
   }
@@ -77,12 +71,9 @@ div.b {
 @media only screen and (max-width: 600px) {
   div.a {
     margin: 40px 40px 40px 40px;
-    font-size: 15px;
+    font-size: 10px;
     text-align: justify;
     padding: 10px 20px 10px 20px;
   }
-}
-h6 {
-  text-align: center;
 }
 
