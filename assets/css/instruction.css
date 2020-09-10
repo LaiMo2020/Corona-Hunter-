@@ -58,6 +58,12 @@ div.b {
   padding: 10px 20px 10px 20px;
 }
 
+footer{
+    background-color: #59aec7;
+    margin-top: 55px;
+justify-content: center;
+ 
+}
 /* responsive for other devieces  */
 
 @media only screen and (max-width: 600px) {
