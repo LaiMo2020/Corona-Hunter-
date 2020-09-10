@@ -32,7 +32,7 @@ function gameOver(isWin) {
   let message = null;
   let icon = null;
   if (isWin) {
-    // message = "YOU FOUND THE VIURSES!"; if no virus cell's is clicked
+     message = "YOU FOUND THE VIURSES!"; // if no virus cell's is clicked
     icon = "fa fa-flag";
   } else {
     message = "THE VIRUS GOT YOU!"; //  if the virus cell was clicked

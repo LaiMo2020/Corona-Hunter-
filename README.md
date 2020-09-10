@@ -1,7 +1,7 @@
 # Milestone Project 2: Hunt The Virus 
 
 
-![](assets/images/responsive.devices.png
+![https://laimo2020.github.io/Corona-Hunter-/game.html](assets/images/responsive.png)
 
 This project includes “hunt the virus” a game related to the ongoing Corona crisis in the world. It's based on Minesweeper game and gives the players opportunity to find and kill viruses. Beside the game the page includes an introductory video, to raise the players attention and creates a story motivating the players to play the game. 
 From the main menu the users can access the game instruction, and a background page with facts and information about the  Corona virus. And finally a contact page that enables the users to contact me, using an easy contact form. 
