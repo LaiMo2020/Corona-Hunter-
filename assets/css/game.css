@@ -7,11 +7,7 @@
   padding: 0;
 }
 
-html{
-cursor: url("../images/paws-dog-icon-28.png"), auto ;
-height: 100%;
-width: 20px;
-}
+
 body {
   font-family: "Inconsolata", monospace;
   text-align: center;
