@@ -14,8 +14,6 @@ body {
   font-family: "Inconsolata", monospace;
 }
 
-
-
 /* title of texts */
 h4 {
   text-align: center;
@@ -34,7 +32,7 @@ h6 {
   border-radius: 30px;
   color: black;
 }
- /* styling the text  */
+/* styling the text  */
 div.a {
   border: 1px solid #ccc;
 
@@ -57,12 +55,11 @@ div.b {
   margin-top: 40px;
   padding: 10px 20px 10px 20px;
 }
-
-footer{
-    background-color: #59aec7;
-    margin-top: 55px;
-justify-content: center;
- 
+/* footer  */
+footer {
+  background-color: #59aec7;
+  margin-top: 55px;
+  justify-content: center;
 }
 /* responsive for other devieces  */
 
@@ -82,4 +79,3 @@ justify-content: center;
     padding: 10px 20px 10px 20px;
   }
 }
-

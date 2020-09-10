@@ -12,12 +12,6 @@ body {
   text-align: center;
 }
 
-
-
-
-
-
-
 /* board game style */
 
 #board {
@@ -60,13 +54,14 @@ body {
 .row .col:last-child {
   border-right: none;
 }
-h6{
-    font-size: 1rem;
+h6 {
+  font-size: 1rem;
 }
 
-
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -74,7 +69,9 @@ h6{
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
