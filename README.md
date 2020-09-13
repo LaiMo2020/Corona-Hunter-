@@ -174,14 +174,19 @@ Inspiration from others developers
 
 - [vlaidator/screnshoot/CSS](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/html-validator.jpg)
 
+
+
+- [vlaidator/screnshoot/JS-1](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/js-1.png)
+- [vlaidator/screnshoot/JS-1](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/js-2.png)
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+to visualise/edit my code live.
 - [W3C/HTML](https://validator.w3.org/)
 to check my  HTML code.
 
 - [W3C/CSS](https://jigsaw.w3.org/css-validator/)
 to check my CSS code.
-
-- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
-to visualise/edit my code live.
+- [Jshint](https://jshint.com/)
+to check my JS code.
 
 
 ### Issues identified and fixed during the testing phase
@@ -198,7 +203,7 @@ to visualise/edit my code live.
 
 #### sendEmail.js 
 - checking of the I get the message in my mail from the contact form [Email test ](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/testemailfunction.png)
-
+#### In gerneral :
 - There were many others issues, the lovely slack's community were there for an amazing support.
 
 
@@ -218,6 +223,7 @@ to visualise/edit my code live.
 
 
 ## Acknowledgement 
+### BIG THANKS TO:
 - My mentor Seun (Seun Owonikoko) for a great advices and support.
 - The code institute community on slack for feedback on questions and helpful advices 
 - Family members and friends for help with testing and feedback on the page.
