@@ -1,4 +1,4 @@
-# Milestone Project 2: Hunt The Virus 
+# Milestone Project 2: Corona Hunter 
 
 
 ![https://laimo2020.github.io/Corona-Hunter-/game.html](assets/images/responsive.png)
