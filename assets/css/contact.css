@@ -101,7 +101,12 @@ input:active {
   top: 1px;
 }
 
+#conf{
+      display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
 /* footer */
 footer {
   background-color: #59aec7;
@@ -113,6 +118,7 @@ footer {
 @media only screen and (max-width: 840px) {
   input[type="submit"] {
   margin-left: 5%;
+  font-size: 10px;
     
   }
 }
@@ -125,6 +131,8 @@ footer {
 @media only screen and (max-width: 440px) {
   input[type="submit"] {
   margin-left: 50px;
+  font-size: 11px;
+ 
     
   }
 }
