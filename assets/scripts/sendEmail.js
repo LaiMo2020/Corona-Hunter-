@@ -1,11 +1,8 @@
 let form = document.getElementById("contactForm");
 let conf = document.getElementById("conf");
 
-window.onload = () => {
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-  });
-};
+
+
 function sendMail(contactForm) {
   emailjs
     .send("gmail", "laith", {
@@ -13,9 +10,11 @@ function sendMail(contactForm) {
       to_name: contactForm.email.value,
       message: contactForm.send,
     })
+    
     .then(
       function (response) {
         console.log("SUCCESS", response);
+        conf.style.opacity = 1;
       },
       function (error) {
         console.log("FAILED", error);
@@ -23,3 +22,4 @@ function sendMail(contactForm) {
     );
   return false;
 }
+

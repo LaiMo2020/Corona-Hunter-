@@ -196,24 +196,24 @@ to visualise/edit my code live.
 - using '$board.on("click", ".col.hidden", function() {  const = $(this); ' checking the object if it is called when I click on any cell in the board. Using the google dev tool and it works well .
 - Make randomly  10% of the cell to be viruses, and to be randomly changing position each time the game restart,  by using the if statement:  if (Math.random() < 0.1) 
 
-#### game.js 
-- checking of the I get the message in my mail from the contact form 
+#### sendEmail.js 
+- checking of the I get the message in my mail from the contact form [Email test ](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/testemailfunction.png)
 
-
+- There were many others issues, the lovely slack's community were there for an amazing support.
 
 
 ## Deployment:
 
 ### The following steps were taken for deployment of my site:
 
-1. Creating my own account on github.com. My public profile can be accessed here: - [Hunt The Virus](https://github.com/LaiMo2020/Corona-Hunter-)
+1. Creating my own account on github.com. My public profile can be accessed here: - [Corona Hunter](https://github.com/LaiMo2020/Corona-Hunter-)
 )
 2. Login into gitpod.com using my GitHub account
 3. Creating a project repository Used the template of Code Institute to facilitate the environment of the editor
 4. Clicked on the gitpod green botton to accsses to my IDE on gitpod.
 5. selected the Master branch GitHub pages section as source 
 6. Using GIT to have different versions with a comment of my project   
-7. GIT push leads me to the final URL of my projected that you can find in the settings and that can be shared with others to access the page in a browser [Hunt the Virus MS2](https://laimo2020.github.io/Corona-Hunter-/)
+7. GIT push leads me to the final URL of my projected that you can find in the settings and that can be shared with others to access the page in a browser [Corona Hunter MS2](https://laimo2020.github.io/Corona-Hunter-/)
 
 
 
