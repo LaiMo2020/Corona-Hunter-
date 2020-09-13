@@ -1,3 +1,4 @@
+// inspired from https://www.youtube.com/watch?v=iscLNDuFLHU&feature=emb_logo
 // creating the cols and rwos of the board and declare them
 
 const $board = $("#board");
@@ -32,7 +33,7 @@ function gameOver(isWin) {
   let message = null;
   let icon = null;
   if (isWin) {
-     message = "YOU FOUND THE VIURSES!"; // if no virus cell's is clicked
+    message = "YOU FOUND THE VIURSES!"; // if no virus cell's is clicked
     icon = "fa fa-flag";
   } else {
     message = "THE VIRUS GOT YOU!"; //  if the virus cell was clicked
@@ -42,7 +43,7 @@ function gameOver(isWin) {
   $(".col:not(.virus)").html(function () {
     const $cell = $(this);
     const count = getVirusCount($cell.data("row"), $cell.data("col"));
-     return count === 0 ? " " : count; // hiding the number if the cell has no viruses (0) virus, after the game over 
+    return count === 0 ? " " : count; // hiding the number if the cell has no viruses (0) virus, after the game over
   });
   $(".col.hidden").removeClass("hidden"); // hiding the cols after the game is Over
   setTimeout(function () {
@@ -81,7 +82,7 @@ function reveal(oi, oj) {
 
   helper(oi, oj);
 }
-// numbers of viruses around the clicked cell 
+// numbers of viruses around the clicked cell
 function getVirusCount(i, j) {
   let count = 0;
   for (let di = -1; di <= 1; di++) {

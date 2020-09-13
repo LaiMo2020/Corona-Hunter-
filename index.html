@@ -1,51 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Home Page</title>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-  <body>
-    <header>
-      <div class="topnav" id="myTopnav">
-        <a href="game.html" id="start">START GAME </a>
-        <a href="index.html" class="active">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="instruction.html">Instructions</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
-    </header>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-    <video autoplay muted loop id="myVideo">
-      <source src="video/intro-f.m4v" type="video/mp4" />
-      <div class="div"></div>
-      <!--error message for the user -->
+<body>
+	<header>
+		<div class="topnav" id="myTopnav">
+			<a href="game.html" id="start">START GAME </a>
+			<a href="index.html" class="active">Home</a>
+			<a href="contact.html">Contact</a>
+			<a href="instruction.html">Instructions</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+	</header>
 
-      Your browser does not support HTML5 video.
-    </video>
+	<video autoplay muted loop id="myVideo">
+		<source src="video/intro-f.m4v" type="video/mp4" />
+		<div class="div"></div>
+		<!--error message for the user -->
 
-    ​
+		Your browser does not support HTML5 video.
+	</video>
 
-    <footer>
-      <h6>&copy; Copyright 2020 laimo2020</h6>
-    </footer>
+	​
 
-    <script src="assets/scripts/index.js"></script>
-  </body>
+	<footer>
+		<h6>&copy; Copyright 2020 laimo2020</h6>
+	</footer>
+
+	<script src="assets/scripts/index.js"></script>
+</body>
+
 </html>

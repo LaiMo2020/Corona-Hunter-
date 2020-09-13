@@ -7,7 +7,6 @@
 }
 body {
   font-family: "Inconsolata", monospace;
-
 }
 /* header */
 
@@ -23,7 +22,6 @@ h6 {
   align-items: center;
   height: 50px;
   widows: 100vw;
- 
 }
 /* video full screen+responsive */
 
@@ -125,12 +123,10 @@ video {
 }
 
 @media screen and (max-width: 600px) {
-    #start{
-      width:80px;
-      font-size: 10px;
-      margin-bottom: 10px;
-      margin-left: 10px;
-    }
-
-   
-    }
+  #start {
+    width: 80px;
+    font-size: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+  }
+}

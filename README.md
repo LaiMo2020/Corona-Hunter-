@@ -168,34 +168,74 @@ Inspiration from others developers
 - iPad
 - iPhone SE
 
+### Validation of the code/ Screenshoot 
+
+- [vlaidator/screnshoot/HTML](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/html-validator.jpg)
+
+- [vlaidator/screnshoot/CSS](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/html-validator.jpg)
+
+- [W3C/HTML](https://validator.w3.org/)
+to check my  HTML code.
+
+- [W3C/CSS](https://jigsaw.w3.org/css-validator/)
+to check my CSS code.
+
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
+to visualise/edit my code live.
+
+
+### Issues identified and fixed during the testing phase
+
+#### game.css :
+- Whites spaces between cols and rows:  Fixed by adding a 0px font size to the rows. 
+- white space in the board game on the right of the board: Fixed by add the style display : inline-block 
+
+#### game.js :
+- In creating the board couldn’t find the colons & rows div’s: I had to use the function appen to solve the problem.
+- Two states for the cell : by making one of them hidden and active it onclick. Add a background color in css to check if the if statement works.
+- using '$board.on("click", ".col.hidden", function() {  const = $(this); ' checking the object if it is called when I click on any cell in the board. Using the google dev tool and it works well .
+- Make randomly  10% of the cell to be viruses, and to be randomly changing position each time the game restart,  by using the if statement:  if (Math.random() < 0.1) 
+
+#### game.js 
+- checking of the I get the message in my mail from the contact form 
+
+
+
+
 ## Deployment:
 
 ### The following steps were taken for deployment of my site:
 
-1. Creating my own account on github.com. My public profile can be accessed here: - [MS1/my project](https://laimo2020.github.io/Corona-Hunter-/)
+1. Creating my own account on github.com. My public profile can be accessed here: - [Hunt The Virus](https://github.com/LaiMo2020/Corona-Hunter-)
 )
 2. Login into gitpod.com using my GitHub account
 3. Creating a project repository Used the template of Code Institute to facilitate the environment of the editor
 4. Clicked on the gitpod green botton to accsses to my IDE on gitpod.
 5. selected the Master branch GitHub pages section as source 
 6. Using GIT to have different versions with a comment of my project   
-7. GIT push leads me to the final URL of my projected that you can find in the settings and that can be shared with others to access the page in a browser [Hunt the Virus MS2](https://laimo2020.github.io/MS1/)
+7. GIT push leads me to the final URL of my projected that you can find in the settings and that can be shared with others to access the page in a browser [Hunt the Virus MS2](https://laimo2020.github.io/Corona-Hunter-/)
 
 
 
 ## Acknowledgement 
 - My mentor Seun (Seun Owonikoko) for a great advices and support.
 - The code institute community on slack for feedback on questions and helpful advices 
-- Family members for help with testing and feedback on the page.
+- Family members and friends for help with testing and feedback on the page.
 
 ## References
- * *Code Institute course modules.
+* Code Institute course modules.
 * https://codepen.io/
 * https://getbootstrap.com/
 * https://www.w3.org/
 * https://getbootstrap.com/docs/4.5/getting-started/introduction/
 * https://www.freeformatter.com/html-formatter.html#ad-output
-* https://unsplash.com/
+* https://css-tricks.com/
 * http://ami.responsivedesign.is/#
+* https://www.youtube.com/watch?v=LFU5ZlrR21E&feature=emb_logo
+* https://www.youtube.com/watch?v=iscLNDuFLHU&feature=emb_logo
+* https://www.diffchecker.com/
+* https://www.javascript.com/
+* https://jshint.com/
+* https://www.codebrainer.com/blog/contact-form-in-javascript
 
 

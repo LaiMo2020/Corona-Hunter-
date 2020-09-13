@@ -31,7 +31,6 @@ h6 {
   box-shadow: 0 0 15px;
   border-radius: 30px;
   color: black;
-  
 }
 /* styling the text  */
 div.a {
@@ -70,7 +69,6 @@ footer {
     font-size: 10px;
     text-align: justify;
     padding: 10px 20px 10px 20px;
-    
   }
 }
 @media only screen and (max-width: 600px) {
@@ -83,9 +81,7 @@ footer {
 }
 @media only screen and (max-width: 600px) {
   p {
- font-size: 14px;
-        display: inline-block;
-
+    font-size: 14px;
+    display: inline-block;
   }
 }
-
