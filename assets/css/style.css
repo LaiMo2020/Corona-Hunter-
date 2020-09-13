@@ -119,3 +119,12 @@ video {
     }
   }
 }
+
+@media screen and (max-width: 600px) {
+    #start{
+      width:80px;
+      font-size: 10px;
+    }
+
+   
+    }

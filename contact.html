@@ -43,27 +43,28 @@
         </a>
       </div>
     </header>
+
     <h2>Contact Me</h2>
     <!-- contact form  -->
     <div id="page-contact">
       <form  onsubmit="return sendMail(this);" id="contactForm">
         <label>Name</label><br />
-        <input type="text" name="name" class="name" />
+        <input type="text" name="name" class="name" required/>
         <br />
         <label>Email</label> <br />
-        <input type="email" name="email" class="email" />
+        <input type="email" name="email" class="email" required/>
         <br />
         <label>Message</label><br />
         <textarea name="message"></textarea><br />
         <input type="submit" value="Send" class="send" />
       </form>
     </div>
-
+<p style="opacity: 0;" id="conf">thanks for you message</p>
     <!-- Footer inspired from www.nicesnippets.com/-->
     <footer>
       <h6>&copy; Copyright 2020 laimo2020</h6>
     </footer>
-
+ 
     <!-- <script src="assets/scripts/sendEmail.js"></script>
     <script src="assets/scripts/contact.js"></script> -->
     <script src="assets/scripts/sendEmail.js"></script>
