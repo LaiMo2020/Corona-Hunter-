@@ -18,21 +18,22 @@
     <link rel="stylesheet" href="assets/css/contact.css" />
 
     <link rel="stylesheet" href="assets/css/style.css" />
+      <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_dZeWW8a3A5qfz8Lu6HUze");
+        })();
+    
+    </script>
+
 
     <title>Contact</title>
-    <script
-      type="text/javascript"
-      src="https://cdn.emailjs.com/sdk/2.2.4/email.min.js"
-    ></script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init("user_dZeWW8a3A5qfz8Lu6HUze");
-      })();
-    </script>
+ 
+    
   </head>
   <body>
     <header>
-      <div class="topnav" id="myTopnav">
+     <div class="topnav" id="myTopnav">
         <a href="game.html" id="start">START GAME </a>
         <a href="index.html" class="active">Home</a>
         <a href="contact.html">Contact</a>
@@ -45,12 +46,12 @@
     <h2>Contact Me</h2>
     <!-- contact form  -->
     <div id="page-contact">
-      <form id="container">
+      <form  onsubmit="return sendMail(this);" id="contactForm">
         <label>Name</label><br />
-        <input type="text" name="user_name" class="name" />
+        <input type="text" name="name" class="name" />
         <br />
         <label>Email</label> <br />
-        <input type="email" name="user_email" class="email" />
+        <input type="email" name="email" class="email" />
         <br />
         <label>Message</label><br />
         <textarea name="message"></textarea><br />
@@ -66,5 +67,6 @@
     <!-- <script src="assets/scripts/sendEmail.js"></script>
     <script src="assets/scripts/contact.js"></script> -->
     <script src="assets/scripts/sendEmail.js"></script>
+    <script src="assets/scripts/index.js"></script>
   </body>
 </html>
