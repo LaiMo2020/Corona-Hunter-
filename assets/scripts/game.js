@@ -5,8 +5,24 @@ const $board = $("#board");
 const ROWS = 10;
 const COLS = 10;
 
-function createBoard(rows, cols) {
+let levelOneDone = false;
+let levelTowDone = false;
+let level = 0;
+let currentLevel = 1;
+let hasStartedLevelTow = false;
+
+function createBoard(rows, cols, level) {
   $board.empty();
+
+  if (levelOneDone) {
+    level = 0.2;
+  }
+  else {
+    level = 0.1;
+  }
+
+  
+
   for (let i = 0; i < rows; i++) {
     const $row = $("<div>").addClass("row");
     for (let j = 0; j < cols; j++) {
@@ -14,7 +30,7 @@ function createBoard(rows, cols) {
         .addClass("col hidden") // adding hidding class
         .attr("data-row", i)
         .attr("data-col", j);
-      if (Math.random() < 0.1) {
+      if (Math.random() < level) {
         // adding the virus cell with 10% of the cell
         $col.addClass("virus");
       }
@@ -33,12 +49,20 @@ function gameOver(isWin) {
   let message = null;
   let icon = null;
   if (isWin) {
+    levelOneDone = true;
+    currentLevel++;
+
+    if (currentLevel === 3) {
+      levelTowDone = true;
+    }
+
     message = "YOU FOUND THE VIURSES!"; // if no virus cell's is clicked
     icon = "fa fa-flag";
   } else {
     message = "THE VIRUS GOT YOU!"; //  if the virus cell was clicked
     icon = "fa fa-cog";
   }
+
   $(".col.virus").append($("<i>").addClass(icon));
   $(".col:not(.virus)").html(function () {
     const $cell = $(this);
@@ -46,11 +70,38 @@ function gameOver(isWin) {
     return count === 0 ? " " : count; // hiding the number if the cell has no viruses (0) virus, after the game over
   });
   $(".col.hidden").removeClass("hidden"); // hiding the cols after the game is Over
+
   setTimeout(function () {
-    alert(message);
-    restart();
+
+    if (currentLevel === 2 & hasStartedLevelTow === false) {
+      if (window.confirm("Do You To Play Next Level?")) {
+        restart();
+      }
+    }
+
+    if (currentLevel === 1) {
+      alert("Restart Game");
+      restart();
+    }
+ 
+   if (currentLevel === 3 & levelTowDone === true) {
+      alert("Well Done, You Won!!");
+      levelTowDone = false;
+      levelOneDone = false;
+      hasStartedLevelTow = false;
+      currentLevel = 1
+      if (window.confirm("Do You To Play Agin?")) {
+        restart();
+      }
+    }
+    if (hasStartedLevelTow & levelTowDone === false) {
+      alert("Restart Level 2");
+      restart();
+    }
+
   }, 1000);
 }
+
 //  tracking where are recrusions is going  / json locations/
 function reveal(oi, oj) {
   const seen = {};
@@ -82,6 +133,7 @@ function reveal(oi, oj) {
 
   helper(oi, oj);
 }
+
 // numbers of viruses around the clicked cell
 function getVirusCount(i, j) {
   let count = 0;
@@ -96,8 +148,14 @@ function getVirusCount(i, j) {
   }
   return count;
 }
+
 // adding a click listener
 $board.on("click", ".col.hidden", function () {
+
+  if (levelOneDone) {
+    hasStartedLevelTow = true;
+  }
+
   const $cell = $(this);
   const row = $cell.data("row");
   const col = $cell.data("col");
