@@ -5,6 +5,8 @@ const $board = $("#board");
 const ROWS = 10;
 const COLS = 10;
 
+// adding variables for both levels in the game, also the level of difficulties by increasing the viruses in the second level
+
 let levelOneDone = false;
 let levelTowDone = false;
 let level = 0;
@@ -16,12 +18,9 @@ function createBoard(rows, cols, level) {
 
   if (levelOneDone) {
     level = 0.2;
-  }
-  else {
+  } else {
     level = 0.1;
   }
-
-  
 
   for (let i = 0; i < rows; i++) {
     const $row = $("<div>").addClass("row");
@@ -40,7 +39,8 @@ function createBoard(rows, cols, level) {
   }
 }
 
-// restart the game after losing or winning
+// restart the game after losing or winning, move to the next level after finding all viruses in level one
+
 function restart() {
   createBoard(ROWS, COLS);
 }
@@ -71,10 +71,13 @@ function gameOver(isWin) {
   });
   $(".col.hidden").removeClass("hidden"); // hiding the cols after the game is Over
 
-  setTimeout(function () {
 
-    if (currentLevel === 2 & hasStartedLevelTow === false) {
-      if (window.confirm("Do You To Play Next Level?")) {
+   
+  // udapte gameäs level to win/ lose the game
+ 
+  setTimeout(function () {
+    if ((currentLevel === 2) & (hasStartedLevelTow === false)) {
+      if (window.confirm("Do you to play next level?")) {
         restart();
       }
     }
@@ -83,22 +86,21 @@ function gameOver(isWin) {
       alert("Restart Game");
       restart();
     }
- 
-   if (currentLevel === 3 & levelTowDone === true) {
-      alert("Well Done, You Won!!");
+
+    if ((currentLevel === 3) & (levelTowDone === true)) {
+      alert("Well done, You won!!");
       levelTowDone = false;
       levelOneDone = false;
       hasStartedLevelTow = false;
-      currentLevel = 1
-      if (window.confirm("Do You To Play Agin?")) {
+      currentLevel = 1;
+      if (window.confirm("Do you to play agin?")) {
         restart();
       }
     }
-    if (hasStartedLevelTow & levelTowDone === false) {
-      alert("Restart Level 2");
+    if (hasStartedLevelTow & (levelTowDone === false)) {
+      alert("Restart level 2 ?");
       restart();
     }
-
   }, 1000);
 }
 
@@ -151,7 +153,6 @@ function getVirusCount(i, j) {
 
 // adding a click listener
 $board.on("click", ".col.hidden", function () {
-
   if (levelOneDone) {
     hasStartedLevelTow = true;
   }
