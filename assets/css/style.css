@@ -121,11 +121,11 @@ video {
     overflow: hidden;
   }
 
-  /* .topnav.responsive .icon {
+  .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
-  } */
+  }
 
   .topnav.responsive a {
     float: none;
@@ -135,6 +135,18 @@ video {
 
 }
 
+.b {
+  border: 1px solid #ccc;
+
+  margin: 40px 80px 40px 80px;
+
+  box-shadow: 0 0 15px;
+  border-radius: 10px;
+  text-align: center;
+
+  margin-top: 40px;
+  padding: 10px 20px 10px 20px;
+}
 @media screen and (max-width: 600px) {
   #start {
     width: 80px;
@@ -158,4 +170,12 @@ footer {
 
 footer h6 {
   font-size: large;
+}
+
+@media screen and (max-width: 600px) {
+  div.b {
+  text-align: center;
+  font-size: 9px;
+  padding: 5px 10px 5px 10px;
+  }
 }
