@@ -3,7 +3,7 @@
 
 ![https://laimo2020.github.io/Corona-Hunter-/game.html](assets/images/responsive.png)
 
-This project includes “hunt the virus” a game related to the ongoing Corona crisis in the world. It's based on Minesweeper game and gives the players opportunity to find and kill viruses. Beside the game the page includes an introductory video, to raise the players attention and creates a story motivating the players to play the game. 
+This project includes “Corona-Hunter-” a game related to the ongoing Corona crisis in the world. It's based on Minesweeper game and gives the players opportunity to find and kill viruses in two levels with different grades of dificulties. Beside the game the page includes an introductory video, to raise the players attention and creates a story motivating the players to play the game. 
 From the main menu the users can access the game instruction, and a background page with facts and information about the  Corona virus. And finally a contact page that enables the users to contact me, using an easy contact form. 
 For the creation of the page I used html, css, bootstrap 4, javascript, JQuery, Google mail mailJS . 
 
@@ -190,25 +190,52 @@ to check my JS code.
 
 
 ### Issues identified and fixed during the testing phase
+#### style.css
+
+- users expect to have the navbar up of the page, to navigate into the site, when scrolling down. 
+   - Problem: The nav bar was not working when user scroll down in the home page
+   - Solution: Problem solved by adding z_index to the navbar and the video itself 
+   - Result: navbar works fine.
 
 #### game.css :
-- Whites spaces between cols and rows:  Fixed by adding a 0px font size to the rows. 
-- white space in the board game on the right of the board: Fixed by add the style display : inline-block 
-- Expected -Site is expected to do X why the user does Y
-Testing - Tested the site by doing Y
-Result - The site did not respond due to A,B,C
-or
-Result - The site acted as normally and it did Y
-Fix - I did Z to the code because something was missing
+
+- The game board expect to stay responsive in different screen size. <br>
+  - Test: Problem found,screen was broken between 700-800px.
+  - Fixed: By increasing the "media screen to 800px
+  - Result: no more broken at the level mentioned above. 
+
+
 #### game.js :
-- In creating the board couldn’t find the colons & rows div’s: I had to use the function appen to solve the problem.
-- Two states for the cell : by making one of them hidden and active it onclick. Add a background color in css to check if the if statement works.
-- using '$board.on("click", ".col.hidden", function() {  const = $(this); ' checking the object if it is called when I click on any cell in the board. Using the google dev tool and it works well .
-- Make randomly  10% of the cell to be viruses, and to be randomly changing position each time the game restart,  by using the if statement:  if (Math.random() < 0.1) 
+
+- Users expect to have a correct message once they finish the first level & increasing of viruses in the second level.
+    - Problem: The conditions to complete first level were the same as losing the second level.
+    - fixed: By adding Boolean variables, to listen when the user started to play the second level.
+    - Result: Fixed
 
 #### sendEmail.js 
-- checkThe contact form expexted to send me an email ing of the I get the message in my mail from the contact form [Email test ](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/sendEmailTest.png)
-#### In gerneral :
+- Contact-form  is expected to send me an email when the user complete the form and click on the send buttom:<br>
+Testing : The messages arrived empty to my mail <br>
+Problem :A mistake inside my template in EmailJS.com <br>
+I edited the core of template to: <br>
+ "Hello,
+You got a new meesage from {{email}}:
+{{message}}
+{{name}}". <br>
+Result : the problem is fixed, content reach my mail as it should. [Email test ](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/sendEmailTest.png)
+
+- user expect to have a confirmation text , if his message was delivered
+I added: “let conf = document.getElementById("conf");
+” Then “conf.style.opacity = 1;” & style the text in contact.css<br>
+Result: No problem found 
+
+- user expect to have an empty fileds after submitting a message<br>
+I added: " document.getElementById("contactForm").reset();" <br>
+Result: problem solved 
+
+
+
+
+
 
 
 
