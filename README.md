@@ -194,7 +194,12 @@ to check my JS code.
 #### game.css :
 - Whites spaces between cols and rows:  Fixed by adding a 0px font size to the rows. 
 - white space in the board game on the right of the board: Fixed by add the style display : inline-block 
-
+- Expected -Site is expected to do X why the user does Y
+Testing - Tested the site by doing Y
+Result - The site did not respond due to A,B,C
+or
+Result - The site acted as normally and it did Y
+Fix - I did Z to the code because something was missing
 #### game.js :
 - In creating the board couldn’t find the colons & rows div’s: I had to use the function appen to solve the problem.
 - Two states for the cell : by making one of them hidden and active it onclick. Add a background color in css to check if the if statement works.
@@ -202,9 +207,9 @@ to check my JS code.
 - Make randomly  10% of the cell to be viruses, and to be randomly changing position each time the game restart,  by using the if statement:  if (Math.random() < 0.1) 
 
 #### sendEmail.js 
-- checking of the I get the message in my mail from the contact form [Email test ](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/testemailfunction.png)
+- checkThe contact form expexted to send me an email ing of the I get the message in my mail from the contact form [Email test ](https://github.com/LaiMo2020/Corona-Hunter-/blob/master/testing/validator/sendEmailTest.png)
 #### In gerneral :
-- There were many others issues, the lovely slack's community were there for an amazing support.
+
 
 
 ## Deployment:
@@ -224,7 +229,7 @@ to check my JS code.
 
 ## Acknowledgement 
 ### BIG THANKS TO:
-- My mentor Seun (Seun Owonikoko) for a great advices and support.
+- My mentor Seun (Seun Owonikoko) for a great advices and support in HTML and CSS.
 - The code institute community on slack for feedback on questions and helpful advices 
 - Family members and friends for help with testing and feedback on the page.
 
