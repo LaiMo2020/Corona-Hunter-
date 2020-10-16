@@ -73,6 +73,7 @@ div .b {
   .col {
     width: 40px;
     height: 40px;
+    line-height: 25px;
   }
 }
 @media screen and (max-width: 600px) {
