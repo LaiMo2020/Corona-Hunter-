@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="assets/css/style.css" />
-    
+  <body>
+    <header>
+      <div class="topnav" id="myTopnav">
+        <a href="game.html" id="start">HUNT CORONA </a>
+        <a href="index.html" class="active">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="instruction.html"
+          >Instructions
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close-button">×</span>
+              <h1>Hello, I am a modal!</h1>
+            </div>
+          </div></a
+        >
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
 
-</head>
+    <video autoplay muted loop id="myVideo">
+      <source src="video/intro-f.m4v" type="video/mp4" />
+      <div class="div"></div>
+      <!--error message for the user -->
 
-<body>
-	<header>
-		<div class="topnav" id="myTopnav">
-			<a href="game.html" id="start">HUNT CORONA </a>
-			<a href="index.html" class="active">Home</a>
-			<a href="contact.html">Contact</a>
-			<a href="instruction.html">Instructions <div class="modal">
-    <div class="modal-content">
-        <span class="close-button">×</span>
-        <h1>Hello, I am a modal!</h1>
+      Your browser does not support HTML5 video.
+    </video>
+
+    ​
+    <div class="b">
+      <h4>COVID‑19 pandemic</h4>
+      <br /><br />
+      <p>
+        The COVID‑19 pandemic, also known as the corona virus pandemic, is an
+        ongoing global pandemic of corona virus disease 2019 (COVID‑19), caused
+        by severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2). The
+        outbreak was first identified in December 2019 in Wuhan,
+        China. The World Health Organization declared the outbreak a Public
+        Health Emergency of International Concern on 30 January 2020 and a
+        pandemic on 11 March. As of 30 August 2020, more than 24.9 million
+        cases of COVID‑19 have been reported in more than 188 countries and
+        territories, resulting in more than 842,000 deaths; more than
+        16.4 million people have recovere. The virus is spread primarily via
+        nose and mouth secretions including small droplets produced by
+        coughing, sneezing, and talking. The droplets usually do not travel
+        through air over long distances. However, those standing in close
+        proximity may inhale these droplets and become infected. People may also
+        become infected by touching a contaminated surface and then touching
+        their face. The transmission may also occur through smaller
+        droplets that are able to stay suspended in the air for longer periods
+        of time in enclosed spaces. It is most contagious during the first three
+        days after the onset of symptoms, although spread is possible before
+        symptoms appear, and from people who do not show symptoms.<br /><br />
+        <strong>reference: https://www.wikipedia.org/ </strong>
+      </p>
+
+     <h5>Stay updated about Covid-19 in:</h5>
+      <a href=" https://www.who.int/emergencies/diseases/novel-coronavirus-2019">World Health Organization</a>
+     
     </div>
-</div></a>
-			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-				<i class="fa fa-bars"></i>
-			</a>
-		</div>
-	</header>
 
-	<video autoplay muted loop id="myVideo">
-		<source src="video/intro-f.m4v" type="video/mp4" />
-		<div class="div"></div>
-		<!--error message for the user -->
+    <footer class="footer">
+      <h6>&copy; Copyright 2020 laimo2020</h6>
+    </footer>
 
-		Your browser does not support HTML5 video.
-	</video>
-
-	​<div class="b">
-		<h4>COVID‑19 pandemic</h4>
-		<br /><br />
-		<p>
-			The COVID‑19 pandemic, also known as the corona virus pandemic, is an
-			ongoing global pandemic of corona virus disease 2019 (COVID‑19), caused
-			by severe acute respiratory syndrome coronavirus 2 (SARS‑CoV‑2). The
-			outbreak was first identified in December 2019 in Wuhan, China. The World
-			Health Organization declared the outbreak a Public Health Emergency of
-			International Concern on 30 January 2020 and a pandemic on 11 March. As of
-			30 August 2020, more than 24.9 million cases of COVID‑19 have been
-			reported in more than 188 countries and territories, resulting in more
-			than 842,000 deaths; more than 16.4 million people have recovere. The
-			virus is spread primarily via nose and mouth secretions including small
-			droplets produced by coughing, sneezing, and talking. The droplets usually
-			do not travel through air over long distances. However, those standing in
-			close proximity may inhale these droplets and become infected. People may
-			also become infected by touching a contaminated surface and then touching
-			their face. The transmission may also occur through smaller droplets that
-			are able to stay suspended in the air for longer periods of time in
-			enclosed spaces. It is most contagious during the first three days after
-			the onset of symptoms, although spread is possible before symptoms appear,
-			and from people who do not show symptoms.<br /><br />
-			<strong>reference: https://www.wikipedia.org/ </strong></p>
-	</div>
-
-	<footer class="footer">
-		<h6>&copy; Copyright 2020 laimo2020</h6>
-	</footer>
-
-	<script src="assets/scripts/index.js"></script>
-</body>
-
+    <script src="assets/scripts/index.js"></script>
+  </body>
 </html>
