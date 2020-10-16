@@ -8,10 +8,10 @@ const COLS = 10;
 // adding variables for both levels in the game, also the level of difficulties by increasing the viruses in the second level
 
 let levelOneDone = false;
-let levelTowDone = false;
+let levelTwoDone = false;
 let level = 0;
 let currentLevel = 1;
-let hasStartedLevelTow = false;
+let hasStartedLevelTwo = false;
 
 function createBoard(rows, cols, level) {
   $board.empty();
@@ -53,7 +53,7 @@ function gameOver(isWin) {
     currentLevel++;
 
     if (currentLevel === 3) {
-      levelTowDone = true;
+      levelTwoDone = true;
     }
 
     message = "YOU FOUND THE VIURSES!"; // if no virus cell's is clicked
@@ -76,7 +76,7 @@ function gameOver(isWin) {
   // udapte gameäs level to win/ lose the game
  
   setTimeout(function () {
-    if ((currentLevel === 2) & (hasStartedLevelTow === false)) {
+    if ((currentLevel === 2) & (hasStartedLevelTwo === false)) {
       if (window.confirm("Do you to play next level?")) {
         restart();
       }
@@ -87,17 +87,17 @@ function gameOver(isWin) {
       restart();
     }
 
-    if ((currentLevel === 3) & (levelTowDone === true)) {
+    if ((currentLevel === 3) & (levelTwoDone === true)) {
       alert("Well done, You won!!");
-      levelTowDone = false;
+      levelTwoDone = false;
       levelOneDone = false;
-      hasStartedLevelTow = false;
+      hasStartedLevelTwo = false;
       currentLevel = 1;
       if (window.confirm("Do you to play agin?")) {
         restart();
       }
     }
-    if (hasStartedLevelTow & (levelTowDone === false)) {
+    if (hasStartedLevelTwo & (levelTwoDone === false)) {
       alert("Restart level 2 ?");
       restart();
     }
@@ -154,7 +154,7 @@ function getVirusCount(i, j) {
 // adding a click listener
 $board.on("click", ".col.hidden", function () {
   if (levelOneDone) {
-    hasStartedLevelTow = true;
+    hasStartedLevelTwo = true;
   }
 
   const $cell = $(this);
