@@ -1,4 +1,4 @@
-// inspired from https://www.youtube.com/watch?v=iscLNDuFLHU&feature=emb_logo
+
 // creating the cols and rwos of the board and declare them
 
 const $board = $("#board");
