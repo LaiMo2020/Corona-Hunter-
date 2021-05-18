@@ -3,7 +3,7 @@
 
 ![https://laimo2020.github.io/Corona-Hunter-/game.html](assets/images/responsive.png)
 
-This project includes “Corona-Hunter-” a game related to the ongoing Corona crisis in the world. It's based on Minesweeper game and gives the players opportunity to find and kill viruses in two levels with different grades of dificulties. Beside the game the page includes an introductory video, to raise the players attention and creates a story motivating the players to play the game. 
+This project includes “Corona-Hunter-” a game related to the ongoing Corona crisis in the world. It's based on Minesweeper game and gives the players opportunity to find and kill viruses in two levels with different grades of dificulties. Beside the game the page includes an introductory video, to raise the players attention and creates a story motivating the players to play the game. The game url is https://laimo2020.github.io/Corona-Hunter-/index.html
 From the main menu the users can access the game instruction, and a background page with facts and information about the  Corona virus. And finally a contact page that enables the users to contact me, using an easy contact form. 
 For the creation of the page I used html, css, bootstrap 4, javascript, JQuery, Google mail mailJS . 
 
